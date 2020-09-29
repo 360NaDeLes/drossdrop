@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DrossDrop.Models;
+using DrossDrop_Data;
 
 namespace DrossDrop.Controllers
 {
@@ -20,6 +22,10 @@ namespace DrossDrop.Controllers
 
         public IActionResult Index()
         {
+            DBConnection dbconnect = new DBConnection();
+
+            dbconnect.OpenConnection();
+
             return View();
         }
 
