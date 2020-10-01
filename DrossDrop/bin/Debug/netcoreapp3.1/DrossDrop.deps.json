@@ -24,7 +24,7 @@
     ".NETCoreApp,Version=v3.1": {
       "DrossDrop/1.0.0": {
         "dependencies": {
-          "DrossDrop_Data": "1.0.0",
+          "DrossDrop.Data": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -1327,15 +1327,15 @@
           "ref/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "DrossDrop_Data/1.0.0": {
+      "DrossDrop.Data/1.0.0": {
         "dependencies": {
           "MySql.Data": "8.0.21"
         },
         "runtime": {
-          "DrossDrop_Data.dll": {}
+          "DrossDrop.Data.dll": {}
         },
         "compile": {
-          "DrossDrop_Data.dll": {}
+          "DrossDrop.Data.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3745,7 +3745,7 @@
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
     },
-    "DrossDrop_Data/1.0.0": {
+    "DrossDrop.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

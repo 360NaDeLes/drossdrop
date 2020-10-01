@@ -1,0 +1,9 @@
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.Data.deps.json
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.Data.dll
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csprojAssemblyReference.cache
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.AssemblyInfoInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.AssemblyInfo.cs
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.Data.pdb
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CoreCompileInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.dll
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.pdb

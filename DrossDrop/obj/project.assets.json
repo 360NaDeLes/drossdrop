@@ -1690,21 +1690,18 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
-      "DrossDrop_Data/1.0.0": {
+      "DrossDrop.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "MySql.Data": "8.0.21"
         },
         "compile": {
-          "bin/placeholder/DrossDrop_Data.dll": {}
+          "bin/placeholder/DrossDrop.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DrossDrop_Data.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+          "bin/placeholder/DrossDrop.Data.dll": {}
+        }
       }
     }
   },
@@ -5893,15 +5890,15 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
-    "DrossDrop_Data/1.0.0": {
+    "DrossDrop.Data/1.0.0": {
       "type": "project",
-      "path": "../DrossDrop_Data/DrossDrop_Data.csproj",
-      "msbuildProject": "../DrossDrop_Data/DrossDrop_Data.csproj"
+      "path": "../DrossDrop.Data/DrossDrop.Data.csproj",
+      "msbuildProject": "../DrossDrop.Data/DrossDrop.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "DrossDrop_Data >= 1.0.0"
+      "DrossDrop.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5934,8 +5931,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop_Data\\DrossDrop_Data.csproj": {
-              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop_Data\\DrossDrop_Data.csproj"
+            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj"
             }
           }
         }

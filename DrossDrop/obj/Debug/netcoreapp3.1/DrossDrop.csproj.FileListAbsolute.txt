@@ -35,10 +35,6 @@ C:\Users\raphaelvanmarion\source\repos\360NaDeLes\drossdrop\DrossDrop\obj\Debug\
 C:\Users\raphaelvanmarion\source\repos\360NaDeLes\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.pdb
 C:\Users\raphaelvanmarion\source\repos\360NaDeLes\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.genruntimeconfig.cache
 C:\Users\raphaelvanmarion\source\repos\360NaDeLes\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.csproj.CopyComplete
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop_Data.Views.dll
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop_Data.Views.pdb
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop_Data.exe
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.StaticWebAssets.xml
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
@@ -53,5 +49,5 @@ C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop_Data.dll
-C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop_Data.pdb
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Data.dll
+C:\Users\raphaelvanmarion\Source\Repos\360NaDeLes\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Data.pdb
