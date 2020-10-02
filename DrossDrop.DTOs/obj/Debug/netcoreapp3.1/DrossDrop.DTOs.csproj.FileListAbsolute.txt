@@ -1,0 +1,9 @@
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.deps.json
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csprojAssemblyReference.cache
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.AssemblyInfoInputs.cache
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.AssemblyInfo.cs
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csproj.CoreCompileInputs.cache
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
+C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb

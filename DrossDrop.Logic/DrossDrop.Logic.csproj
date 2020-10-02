@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DrossDrop.Data\DrossDrop.Data.csproj" />
+    <ProjectReference Include="..\DrossDrop.DTOs\DrossDrop.DTOs.csproj" />
+  </ItemGroup>
+
 </Project>

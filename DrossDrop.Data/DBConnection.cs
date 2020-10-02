@@ -1,9 +1,13 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Web;
+using System.Threading.Tasks;
+using DrossDrop.DTOs;
+using Renci.SshNet;
 
 namespace DrossDrop.Data
 {
@@ -27,57 +31,79 @@ namespace DrossDrop.Data
             server = "localhost";
             database = "drossdrop";
             uid = "root";
-            password = "root";
+            password = "";
             string connectionString = "Server=" + server + ";" + "Database=" +
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
 
             connection = new MySqlConnection(connectionString);
         }
 
-        //open connection to database
-        public bool OpenConnection()
+        //Insert
+        public async Task ExecuteInsert(string querystring)
         {
             try
             {
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                connection.Open();
-                Console.WriteLine("Connected");
-                return true;
+                await connection.OpenAsync();
+                
+                MySqlCommand cmd = new MySqlCommand(querystring, connection);
+                await cmd.ExecuteNonQueryAsync();
+                await connection.CloseAsync();
             }
-            catch (MySqlException ex)
+            catch (MySqlException e)
             {
-                //When handling errors, you can your application's response based 
-                //on the error number.
-                //The two most common error numbers when connecting are as follows:
-                //0: Cannot connect to server.
-                //1045: Invalid user name and/or password.
-                switch (ex.Number)
-                {
-                    case 0:
-                        System.Diagnostics.Debug.WriteLine("Cannot connect to server.  Contact administrator");
-                        break;
-
-                    case 1045:
-                        System.Diagnostics.Debug.WriteLine("Invalid username/password, please try again");
-                        break;
-                }
-
-                return false;
+                Console.WriteLine("{0} Exception caught.", e);
+                await connection.CloseAsync();
             }
         }
 
+        public async Task<IEnumerable<UserDTO>> ExecuteSelect(string querystring)
+        {
+            List<UserDTO> users = new List<UserDTO>();
+
+            try
+            {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                await connection.OpenAsync();
+                
+                MySqlCommand cmd = new MySqlCommand(querystring, connection);
+                DbDataReader reader = await cmd.ExecuteReaderAsync();
+
+                while (reader.Read())
+                {
+                    UserDTO user = new UserDTO();
+
+                    user.userId = Convert.ToInt32(reader["userId"]);
+                    user.roleId = Convert.ToInt32(reader["roleId"]);
+                    user.email = reader["email"].ToString();
+                    user.password = reader["password"].ToString();
+                    user.firstName = reader["firstName"].ToString();
+                    user.lastName = reader["lastName"].ToString();
+
+                    users.Add(user);
+                }
+
+                await connection.CloseAsync();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("{0} Exception caught.", e);
+                await connection.CloseAsync();
+            }
+
+            return users;
+        }
+
         //Close connection
-        private bool CloseConnection()
+        private async Task CloseConnection()
         {
             try
             {
-                connection.Close();
-                return true;
+                await connection.CloseAsync();
             }
-            catch (MySqlException ex)
+            catch (MySqlException e)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
-                return false;
+                System.Diagnostics.Debug.WriteLine(e.Message);
             }
         }
     }

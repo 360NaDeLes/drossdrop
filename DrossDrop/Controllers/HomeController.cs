@@ -22,10 +22,6 @@ namespace DrossDrop.Controllers
 
         public IActionResult Index()
         {
-            DBConnection dbconnect = new DBConnection();
-
-            dbconnect.OpenConnection();
-
             return View();
         }
 

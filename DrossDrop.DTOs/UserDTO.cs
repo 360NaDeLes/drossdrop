@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DrossDrop.DTOs
 {
-    class UserDTO
+    public class UserDTO
     {
         public int userId { get; set; }
         public int roleId { get; set; }

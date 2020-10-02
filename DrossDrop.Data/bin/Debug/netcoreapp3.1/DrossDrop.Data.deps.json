@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v3.1": {
       "DrossDrop.Data/1.0.0": {
         "dependencies": {
+          "DrossDrop.DTOs": "1.0.0",
           "MySql.Data": "8.0.21"
         },
         "runtime": {
@@ -1047,6 +1048,11 @@
             "fileVersion": "1.0.24212.1"
           }
         }
+      },
+      "DrossDrop.DTOs/1.0.0": {
+        "runtime": {
+          "DrossDrop.DTOs.dll": {}
+        }
       }
     }
   },
@@ -1762,6 +1768,11 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "DrossDrop.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }
