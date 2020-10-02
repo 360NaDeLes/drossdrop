@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj": {}
+    "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj": {
+    "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj",
-        "projectName": "DrossDrop.Data",
-        "projectPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj",
+        "projectUniqueName": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
+        "projectName": "DrossDrop.DTOs",
+        "projectPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
         "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\obj\\",
+        "outputPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -40,12 +40,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "dependencies": {
-            "MySql.Data": {
-              "target": "Package",
-              "version": "[8.0.21, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

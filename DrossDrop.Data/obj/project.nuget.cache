@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qhUgDDzFUC5JQ9ruyKxI5kVwNINo0mSdeGA8uoRhhip5cDow4a+R9SmrOPGI41xQaDPlmZ8acvHaFsrKJD+ZEw==",
+  "dgSpecHash": "wWIG1VWBI8odRmIjoVBWqsuueBZfErSoMQdSHBLPBx4GFYJe0/Yde5Iv5x4VQmgaVUwUBIsKNKkt6DxlQOXX7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj",
+  "projectFilePath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

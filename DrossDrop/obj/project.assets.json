@@ -5908,11 +5908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop\\DrossDrop.csproj",
+      "projectUniqueName": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop\\DrossDrop.csproj",
       "projectName": "DrossDrop",
-      "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop\\DrossDrop.csproj",
+      "projectPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop\\DrossDrop.csproj",
       "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop\\obj\\",
+      "outputPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -5931,8 +5931,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj": {
-              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj"
+            "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\source\\repos\\360NaDeLes\\drossdrop\\DrossDrop.Data\\DrossDrop.Data.csproj"
             }
           }
         }
