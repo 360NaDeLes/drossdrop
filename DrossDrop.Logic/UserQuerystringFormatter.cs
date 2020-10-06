@@ -6,6 +6,13 @@ namespace DrossDrop.Logic
 {
     public class UserQuerystringFormatter
     {
+        public string SelectByIdFormatter(int id)
+        {
+            string querystring = "SELECT * FROM users WHERE userId = " + id + ""; 
+
+            return querystring;
+        }
+
         public string InsertFormatter(UserDTO user)
         {
             string querystring = "INSERT INTO users (roleId, email, password, firstName, lastName) " +
@@ -14,27 +21,22 @@ namespace DrossDrop.Logic
             return querystring;
         }
 
-        public string UpdateFormatter(UserDTO user)
+        public string UpdateFormatter(UserDTO user, int id)
         {
             string querystring = "UPDATE users SET roleId = " + user.roleId + ", email = '" + user.email +
                                  "', password = '" + user.password + "', firstName = '" + user.firstName +
-                                 "', lastName = '" + user.lastName + "' WHERE userId = " + user.userId + ""; 
+                                 "', lastName = '" + user.lastName + "' WHERE userId = " + id + ""; 
 
             return querystring;
         }
 
-        public string DeleteFormatter(int userId)
+        public string DeleteFormatter(int id)
         {
-            string querystring = "DELETE FROM users WHERE userId = " + userId + ""; 
+            string querystring = "DELETE FROM users WHERE userId = " + id + ""; 
 
             return querystring;
         }
 
-        public string SelectByIdFormatter(int userId)
-        {
-            string querystring = "SELECT FROM users WHERE userId = " + userId + ""; 
-
-            return querystring;
-        }
+        
     }
 }

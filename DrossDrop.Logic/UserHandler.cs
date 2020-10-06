@@ -30,27 +30,27 @@ namespace DrossDrop.Logic
             return list;
         }
 
-        public async Task UpdateAsync(UserDTO user)
+        public async Task<UserDTO> SelectByIdAsync(int id)
         {
-            string querystring = formatter.UpdateFormatter(user);
+            UserDTO user = new UserDTO();
+
+            string querystring = formatter.SelectByIdFormatter(id);
+
+            user = (await connection.ExecuteSelectQuery(querystring)).FirstOrDefault();
+
+            return user;
+        }
+
+        public async Task UpdateAsync(UserDTO user, int id)
+        {
+            string querystring = formatter.UpdateFormatter(user, id);
 
             await connection.ExecuteNonResponsiveQuery(querystring);
         }
 
-        public async Task<UserDTO> SelectByIdAsync(int userId)
+        public async Task DeleteAsync(int id)
         {
-            UserDTO jez = new UserDTO();
-
-            string querystring = formatter.SelectByIdFormatter(userId);
-
-            jez = (await connection.ExecuteSelectQuery(querystring)).FirstOrDefault();
-
-            return jez;
-        }
-
-        public async Task DeleteAsync(int userId)
-        {
-            string querystring = formatter.DeleteFormatter(userId);
+            string querystring = formatter.DeleteFormatter(id);
 
             await connection.ExecuteNonResponsiveQuery(querystring);
         }

@@ -10,28 +10,31 @@
     <p>
         <a asp-action="Create">Create New</a>
     </p>
+
     <table class="table">
         <thead>
             <tr>
                 <th>
-                    @Html.DisplayNameFor(model => model.userId)
+                    User ID
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.roleId)
+                    Role ID
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.email)
+                    Email
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.password)
+                    Password
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.firstName)
+                    First name
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.lastName)
+                    Last name
                 </th>
-                <th> </th>
+                <th>
+                    Actions
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -56,7 +59,7 @@
                     @Html.DisplayFor(modelItem => item.lastName)
                 </td>
                 <td>
-                    <a asp-action="Update" asp-route-id="@item.userId">Edit</a> ||
+                    <a asp-action="Update" asp-route-id="@item.userId">Edit</a> |
                     <a asp-action="Delete" asp-route-id="@item.userId">Delete</a>
                 </td>
             </tr>

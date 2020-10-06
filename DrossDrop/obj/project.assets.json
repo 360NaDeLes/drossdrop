@@ -165,6 +165,15 @@
           "lib/netstandard2.1/Zstandard.Net.dll": {}
         }
       },
+      "MySqlConnector/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {}
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "type": "package",
         "dependencies": {
@@ -1695,7 +1704,8 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "DrossDrop.DTOs": "1.0.0",
-          "MySql.Data": "8.0.21"
+          "MySql.Data": "8.0.21",
+          "MySqlConnector": "1.0.1"
         },
         "compile": {
           "bin/placeholder/DrossDrop.Data.dll": {}
@@ -2013,6 +2023,36 @@
         "lib/netstandard2.1/Zstandard.Net.dll",
         "mysql.data.8.0.21.nupkg.sha512",
         "mysql.data.nuspec"
+      ]
+    },
+    "MySqlConnector/1.0.1": {
+      "sha512": "bnQk6joP7z0k1aIk13BjrZXIakN+UobXjO8EMh/Y+L6vZ6ul9cJ8RXkD9tia86ksgFs9GqmvPgX7ILx7mOpwNQ==",
+      "type": "package",
+      "path": "mysqlconnector/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/netcoreapp2.1/MySqlConnector.dll",
+        "lib/netcoreapp2.1/MySqlConnector.xml",
+        "lib/netcoreapp3.0/MySqlConnector.dll",
+        "lib/netcoreapp3.0/MySqlConnector.xml",
+        "lib/netstandard1.3/MySqlConnector.dll",
+        "lib/netstandard1.3/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.1.0.1.nupkg.sha512",
+        "mysqlconnector.nuspec"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -6005,23 +6045,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Raphaël\\.nuget\\packages\\": {},
+    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop\\DrossDrop.csproj",
+      "projectUniqueName": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop\\DrossDrop.csproj",
       "projectName": "DrossDrop",
-      "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop\\DrossDrop.csproj",
-      "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop\\obj\\",
+      "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop\\DrossDrop.csproj",
+      "packagesPath": "C:\\Users\\Raphaël\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\raphaelvanmarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Raphaël\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6034,11 +6074,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
-              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj"
+            "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
+              "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj"
             },
-            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj": {
-              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj"
+            "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj": {
+              "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj"
             }
           }
         }
@@ -6069,7 +6109,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

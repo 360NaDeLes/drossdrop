@@ -150,6 +150,14 @@
           }
         }
       },
+      "MySqlConnector/1.0.1": {
+        "runtime": {
+          "lib/netcoreapp3.0/MySqlConnector.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.1.0"
+          }
+        }
+      },
       "NETStandard.Library/1.6.1": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.0.0",
@@ -1052,7 +1060,8 @@
       "DrossDrop.Data/1.0.0": {
         "dependencies": {
           "DrossDrop.DTOs": "1.0.0",
-          "MySql.Data": "8.0.21"
+          "MySql.Data": "8.0.21",
+          "MySqlConnector": "1.0.1"
         },
         "runtime": {
           "DrossDrop.Data.dll": {}
@@ -1147,6 +1156,13 @@
       "sha512": "sha512-mKARhpOOn4rQ6PPdY98UVHq00v/4vDCfluR2Xrr5VNQgtyVzjzorcvQjYArHLRwKLEkBRxgHWRfg0+hS96FI3Q==",
       "path": "mysql.data/8.0.21",
       "hashPath": "mysql.data.8.0.21.nupkg.sha512"
+    },
+    "MySqlConnector/1.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bnQk6joP7z0k1aIk13BjrZXIakN+UobXjO8EMh/Y+L6vZ6ul9cJ8RXkD9tia86ksgFs9GqmvPgX7ILx7mOpwNQ==",
+      "path": "mysqlconnector/1.0.1",
+      "hashPath": "mysqlconnector.1.0.1.nupkg.sha512"
     },
     "NETStandard.Library/1.6.1": {
       "type": "package",

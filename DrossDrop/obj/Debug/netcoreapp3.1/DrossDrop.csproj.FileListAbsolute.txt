@@ -85,8 +85,6 @@ C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\Dross
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.csprojAssemblyReference.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.AssemblyInfoInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.AssemblyInfo.cs
-C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.csproj.CoreCompileInputs.cache
-C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.RazorAssemblyInfo.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.RazorAssemblyInfo.cs
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.TagHelpers.input.cache
@@ -169,3 +167,7 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.pdb
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.genruntimeconfig.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\User\Update.cshtml.g.cs
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.csproj.CoreCompileInputs.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.MvcApplicationPartsAssemblyInfo.cache

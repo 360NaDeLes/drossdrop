@@ -15,7 +15,6 @@ C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csprojAssemblyReference.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.AssemblyInfoInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.AssemblyInfo.cs
-C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CopyComplete
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.dll
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.pdb
@@ -31,3 +30,4 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcor
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CopyComplete
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CoreCompileInputs.cache
