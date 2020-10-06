@@ -12,3 +12,17 @@ C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CopyComplete
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.dll
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Logic.deps.json
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Logic.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Logic.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Data.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Data.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csprojAssemblyReference.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.AssemblyInfoInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.AssemblyInfo.cs
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CoreCompileInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CopyComplete
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.pdb

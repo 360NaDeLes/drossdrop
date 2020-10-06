@@ -31,7 +31,7 @@ namespace DrossDrop.Data
             server = "localhost";
             database = "drossdrop";
             uid = "root";
-            password = "";
+            password = "root";
             string connectionString = "Server=" + server + ";" + "Database=" +
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
 
@@ -39,7 +39,7 @@ namespace DrossDrop.Data
         }
 
         //Insert
-        public async Task ExecuteInsert(string querystring)
+        public async Task ExecuteNonResponsiveQuery(string querystring)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace DrossDrop.Data
             }
         }
 
-        public async Task<IEnumerable<UserDTO>> ExecuteSelect(string querystring)
+        public async Task<IEnumerable<UserDTO>> ExecuteSelectQuery(string querystring)
         {
             List<UserDTO> users = new List<UserDTO>();
 

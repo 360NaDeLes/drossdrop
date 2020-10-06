@@ -11,14 +11,24 @@ namespace DrossDrop.Controllers
 {
     public class UserController : Controller
     {
-        private UserHandeler newUser = new UserHandeler();
+        private UserHandler handler = new UserHandler();
+
+        public async Task<IActionResult> Index()
+        {
+            return View(await handler.SelectAllAsync());
+        }
 
         [HttpPost]
         public async Task<IActionResult> Create(UserDTO user)
         {
-            await newUser.CreateAsync(user);
+            await handler.CreateAsync(user);
 
             return RedirectToAction("Index");
+        }
+
+        private string fff()
+        {
+            return "fff";
         }
 
         [HttpGet]
@@ -27,9 +37,22 @@ namespace DrossDrop.Controllers
             return View();
         }
 
-        public async Task<IActionResult> Index()
+        [HttpPost]
+        public async Task<IActionResult> Update(UserDTO user)
         {
-            return View(await newUser.SelectAllAsync());
+            await handler.UpdateAsync<UserDTO>(user);
+
+            return RedirectToAction("Index");
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Update(int userId)
+        {
+            UserDTO user = await handler.SelectByIdAsync(userId);
+
+            return View(user);
+        }
+
+
     }
 }
