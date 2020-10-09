@@ -17,31 +17,39 @@ namespace DrossDrop.Logic
         private UserQuerystringFormatter formatter = new UserQuerystringFormatter();
         private DBConnection connection = new DBConnection();
 
-        public async Task CreateAsync(UserDTO user)
+        public async Task CreateAsync(User user)
         {
             string querystring = formatter.InsertFormatter(user);
 
             await connection.ExecuteNonResponsiveQuery(querystring);
         }
 
-        public async Task<IEnumerable<UserDTO>> SelectAllAsync()
+        public async Task<IEnumerable<User>> SelectAllAsync()
         {
-            List<UserDTO> list = (await connection.ExecuteSelectQuery("SELECT * FROM users")).ToList();
+            List<User> list = (await connection.ExecuteSelectUserQuery("SELECT * FROM users")).ToList();
+
             return list;
         }
 
-        public async Task<UserDTO> SelectByIdAsync(int id)
+        public async Task<User> SelectByIdAsync(int id)
         {
-            UserDTO user = new UserDTO();
+            User user = new User();
 
             string querystring = formatter.SelectByIdFormatter(id);
 
-            user = (await connection.ExecuteSelectQuery(querystring)).FirstOrDefault();
+            UserDTO udt = (await connection.ExecuteSelectUserQuery(querystring)).FirstOrDefault();
+
+            user.userId = udt.userId;
+            user.roleId = udt.roleId;
+            user.email = udt.email;
+            user.password = udt.password;
+            user.firstName = udt.firstName;
+            user.lastName = udt.lastName;
 
             return user;
         }
 
-        public async Task UpdateAsync(UserDTO user, int id)
+        public async Task UpdateAsync(User user, int id)
         {
             string querystring = formatter.UpdateFormatter(user, id);
 

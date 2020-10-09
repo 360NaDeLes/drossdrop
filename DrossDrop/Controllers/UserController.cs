@@ -27,7 +27,7 @@ namespace DrossDrop.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(UserDTO user)
+        public async Task<IActionResult> Create(User user)
         {
             await handler.CreateAsync(user);
 
@@ -38,13 +38,13 @@ namespace DrossDrop.Controllers
         [HttpGet]
         public async Task<IActionResult> Update(int id)
         {
-            UserDTO user = await handler.SelectByIdAsync(id);
+            User user = await handler.SelectByIdAsync(id);
 
             return View(user);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(UserDTO user, int id)
+        public async Task<IActionResult> Update(User user, int id)
         {
             await handler.UpdateAsync(user, id);
 

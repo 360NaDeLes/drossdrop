@@ -13,7 +13,7 @@ namespace DrossDrop.Logic
             return querystring;
         }
 
-        public string InsertFormatter(UserDTO user)
+        public string InsertFormatter(User user)
         {
             string querystring = "INSERT INTO users (roleId, email, password, firstName, lastName) " +
                                  "VALUES ("+ user.roleId +", '"+ user.email +"', '"+ user.password +"', '"+ user.firstName +"', '"+ user.lastName +"')";
@@ -21,7 +21,7 @@ namespace DrossDrop.Logic
             return querystring;
         }
 
-        public string UpdateFormatter(UserDTO user, int id)
+        public string UpdateFormatter(User user, int id)
         {
             string querystring = "UPDATE users SET roleId = " + user.roleId + ", email = '" + user.email +
                                  "', password = '" + user.password + "', firstName = '" + user.firstName +

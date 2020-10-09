@@ -57,7 +57,8 @@ namespace DrossDrop.Data
             }
         }
 
-        public async Task<IEnumerable<UserDTO>> ExecuteSelectQuery(string querystring)
+        // Select query (users only)
+        public async Task<IEnumerable<UserDTO>> ExecuteSelectUserQuery(string querystring)
         {
             List<UserDTO> users = new List<UserDTO>();
 

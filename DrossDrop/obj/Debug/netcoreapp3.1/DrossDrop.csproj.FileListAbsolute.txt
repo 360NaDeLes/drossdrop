@@ -171,3 +171,4 @@ C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\MySql
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\User\Update.cshtml.g.cs
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
