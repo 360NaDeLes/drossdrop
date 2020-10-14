@@ -26,3 +26,7 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netco
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CopyComplete
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb

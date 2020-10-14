@@ -5,8 +5,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DrossDrop.Data\DrossDrop.Data.csproj" />
     <ProjectReference Include="..\DrossDrop.DTOs\DrossDrop.DTOs.csproj" />
+    <ProjectReference Include="..\DrossDrop.Factory\DrossDrop.Factory.csproj" />
+    <ProjectReference Include="..\DrossDrop.Interface\DrossDrop.DataInterface.csproj" />
   </ItemGroup>
 
 </Project>

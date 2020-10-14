@@ -11,6 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DrossDrop.DTOs\DrossDrop.DTOs.csproj" />
+    <ProjectReference Include="..\DrossDrop.Interface\DrossDrop.DataInterface.csproj" />
   </ItemGroup>
 
 </Project>

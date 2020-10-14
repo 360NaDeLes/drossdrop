@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DrossDrop.DTOs/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DrossDrop.DTOs.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DrossDrop.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DrossDrop.DTOs/1.0.0": {
+      "type": "project",
+      "path": "../DrossDrop.DTOs/DrossDrop.DTOs.csproj",
+      "msbuildProject": "../DrossDrop.DTOs/DrossDrop.DTOs.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "DrossDrop.DTOs >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj",
+      "projectName": "DrossDrop.DataInterface",
+      "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj",
+      "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Interface\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\raphaelvanmarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

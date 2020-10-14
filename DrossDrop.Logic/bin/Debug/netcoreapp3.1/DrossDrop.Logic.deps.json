@@ -9,7 +9,8 @@
       "DrossDrop.Logic/1.0.0": {
         "dependencies": {
           "DrossDrop.DTOs": "1.0.0",
-          "DrossDrop.Data": "1.0.0"
+          "DrossDrop.DataInterface": "1.0.0",
+          "DrossDrop.Factory": "1.0.0"
         },
         "runtime": {
           "DrossDrop.Logic.dll": {}
@@ -1060,6 +1061,7 @@
       "DrossDrop.Data/1.0.0": {
         "dependencies": {
           "DrossDrop.DTOs": "1.0.0",
+          "DrossDrop.DataInterface": "1.0.0",
           "MySql.Data": "8.0.21",
           "MySqlConnector": "1.0.1"
         },
@@ -1067,9 +1069,26 @@
           "DrossDrop.Data.dll": {}
         }
       },
+      "DrossDrop.DataInterface/1.0.0": {
+        "dependencies": {
+          "DrossDrop.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "DrossDrop.DataInterface.dll": {}
+        }
+      },
       "DrossDrop.DTOs/1.0.0": {
         "runtime": {
           "DrossDrop.DTOs.dll": {}
+        }
+      },
+      "DrossDrop.Factory/1.0.0": {
+        "dependencies": {
+          "DrossDrop.Data": "1.0.0",
+          "DrossDrop.DataInterface": "1.0.0"
+        },
+        "runtime": {
+          "DrossDrop.Factory.dll": {}
         }
       }
     }
@@ -1799,7 +1818,17 @@
       "serviceable": false,
       "sha512": ""
     },
+    "DrossDrop.DataInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "DrossDrop.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DrossDrop.Factory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

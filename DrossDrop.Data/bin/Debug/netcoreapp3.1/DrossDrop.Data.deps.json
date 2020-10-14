@@ -9,6 +9,7 @@
       "DrossDrop.Data/1.0.0": {
         "dependencies": {
           "DrossDrop.DTOs": "1.0.0",
+          "DrossDrop.DataInterface": "1.0.0",
           "MySql.Data": "8.0.21",
           "MySqlConnector": "1.0.1"
         },
@@ -1058,6 +1059,14 @@
           }
         }
       },
+      "DrossDrop.DataInterface/1.0.0": {
+        "dependencies": {
+          "DrossDrop.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "DrossDrop.DataInterface.dll": {}
+        }
+      },
       "DrossDrop.DTOs/1.0.0": {
         "runtime": {
           "DrossDrop.DTOs.dll": {}
@@ -1784,6 +1793,11 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "DrossDrop.DataInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "DrossDrop.DTOs/1.0.0": {
       "type": "project",

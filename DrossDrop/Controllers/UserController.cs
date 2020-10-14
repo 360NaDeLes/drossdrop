@@ -14,9 +14,9 @@ namespace DrossDrop.Controllers
         private UserHandler handler = new UserHandler();
 
         // Index: Gets all Users
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            return View(await handler.SelectAllAsync());
+            return View(handler.SelectAllAsync());
         }
 
         // Create: Opens a form where you can create a customer
@@ -27,34 +27,34 @@ namespace DrossDrop.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(User user)
+        public IActionResult Create(User user)
         {
-            await handler.CreateAsync(user);
+            handler.CreateAsync(user);
 
             return RedirectToAction("Index");
         }
 
         // Update: Opens a form with the specified user's information based on userId
         [HttpGet]
-        public async Task<IActionResult> Update(int id)
+        public IActionResult Update(int id)
         {
-            User user = await handler.SelectByIdAsync(id);
+            User user = handler.SelectByIdAsync(id);
 
             return View(user);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(User user, int id)
+        public IActionResult Update(User user, int id)
         {
-            await handler.UpdateAsync(user, id);
+            handler.UpdateAsync(user, id);
 
             return RedirectToAction("Index");
         }
 
         // Delete: Deletes specified user's information from database
-        public async Task<IActionResult> Delete(int id)
+        public IActionResult Delete(int id)
         {
-            await handler.DeleteAsync(id);
+            handler.DeleteAsync(id);
 
             return RedirectToAction("Index");
         }

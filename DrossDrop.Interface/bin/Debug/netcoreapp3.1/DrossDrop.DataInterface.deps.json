@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DrossDrop.DataInterface/1.0.0": {
+        "dependencies": {
+          "DrossDrop.DTOs": "1.0.0"
+        },
+        "runtime": {
+          "DrossDrop.DataInterface.dll": {}
+        }
+      },
+      "DrossDrop.DTOs/1.0.0": {
+        "runtime": {
+          "DrossDrop.DTOs.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DrossDrop.DataInterface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DrossDrop.DTOs/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

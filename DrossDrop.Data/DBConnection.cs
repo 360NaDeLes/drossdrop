@@ -7,11 +7,12 @@ using System.Text;
 using System.Web;
 using System.Threading.Tasks;
 using DrossDrop.DTOs;
+using DrossDrop.Interface;
 using Renci.SshNet;
 
 namespace DrossDrop.Data
 {
-    public class DBConnection
+    public class DBConnection : IData
     {
         private MySqlConnection connection;
         private string server;
@@ -39,40 +40,40 @@ namespace DrossDrop.Data
         }
 
         //Insert
-        public async Task ExecuteNonResponsiveQuery(string querystring)
+        public void ExecuteNonResponsiveQuery(string querystring)
         {
             try
             {
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                await connection.OpenAsync();
+                connection.Open();
                 
                 MySqlCommand cmd = new MySqlCommand(querystring, connection);
-                await cmd.ExecuteNonQueryAsync();
-                await connection.CloseAsync();
+                cmd.ExecuteNonQuery();
+                connection.Close();
             }
             catch (MySqlException e)
             {
                 Console.WriteLine("{0} Exception caught.", e);
-                await connection.CloseAsync();
+                connection.Close();
             }
         }
 
         // Select query (users only)
-        public async Task<IEnumerable<UserDTO>> ExecuteSelectUserQuery(string querystring)
+        public IEnumerable<User> ExecuteSelectUserQuery(string querystring)
         {
-            List<UserDTO> users = new List<UserDTO>();
+            List<User> users = new List<User>();
 
             try
             {
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
-                await connection.OpenAsync();
+                connection.Open();
                 
                 MySqlCommand cmd = new MySqlCommand(querystring, connection);
-                DbDataReader reader = await cmd.ExecuteReaderAsync();
+                DbDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    UserDTO user = new UserDTO();
+                    User user = new User();
 
                     user.userId = Convert.ToInt32(reader["userId"]);
                     user.roleId = Convert.ToInt32(reader["roleId"]);
@@ -84,23 +85,23 @@ namespace DrossDrop.Data
                     users.Add(user);
                 }
 
-                await connection.CloseAsync();
+                connection.Close();
             }
             catch (MySqlException e)
             {
                 Console.WriteLine("{0} Exception caught.", e);
-                await connection.CloseAsync();
+                connection.Close();
             }
 
             return users;
         }
 
         //Close connection
-        private async Task CloseConnection()
+        private void CloseConnection()
         {
             try
             {
-                await connection.CloseAsync();
+                connection.Close();
             }
             catch (MySqlException e)
             {

@@ -1,0 +1,16 @@
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.Factory.deps.json
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.Data.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.Data.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csprojAssemblyReference.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.AssemblyInfoInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.AssemblyInfo.cs
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csproj.CoreCompileInputs.cache
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csproj.CopyComplete
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.dll
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
