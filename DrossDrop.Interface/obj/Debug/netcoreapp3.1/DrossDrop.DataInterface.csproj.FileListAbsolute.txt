@@ -10,3 +10,15 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Interface\obj\Debug\n
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CopyComplete
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.deps.json
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csprojAssemblyReference.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.AssemblyInfoInputs.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.AssemblyInfo.cs
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CoreCompileInputs.cache
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CopyComplete
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb

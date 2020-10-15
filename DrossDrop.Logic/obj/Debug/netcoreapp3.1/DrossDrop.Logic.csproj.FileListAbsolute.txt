@@ -30,3 +30,7 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netco
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb

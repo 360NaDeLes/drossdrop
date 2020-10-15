@@ -2,33 +2,48 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using DrossDrop.Logic;
 using DrossDrop.DTOs;
+using DrossDrop.Logic;
 using Microsoft.AspNetCore.Mvc;
+using Renci.SshNet;
 
 namespace DrossDrop.Controllers
 {
     public class LoginController : Controller
     {
-        //private LoginHandler handler = new LoginHandler();
+        private UserHandler handler = new UserHandler();
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+        public IActionResult Index()
+        {
+            return View();
+        }
 
         //[HttpGet]
-        //public IActionResult ValidateUser()
+        //public IActionResult Login()
         //{
         //    return RedirectToAction("Index");
         //}
 
         //[HttpPost]
-        //public async Task<IActionResult> ValidateUser(User user, string email, string password)
+        //public async Task<IActionResult> Login(User user, string email, string password)
         //{
         //    await handler.ValidateUser(user, email, password);
 
         //    return RedirectToAction("Index", "Home", new { area = "" });
         //}
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Register(User user)
+        {
+            handler.CreateUser(user);
+
+            return RedirectToAction("Index");
+        }
     }
 }

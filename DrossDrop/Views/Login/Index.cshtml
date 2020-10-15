@@ -1,12 +1,10 @@
 ﻿@using DrossDrop.DTOs
-@model UserDTO;
+@model User;
 
 @{
     ViewData["Title"] = "Login";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
 
 <h1>Login</h1>
 
@@ -14,7 +12,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="ValidateUser">
+        <form asp-action="Login">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
                 <label asp-for="email" class="control-label">Email</label>
@@ -29,6 +27,12 @@
             <div class="form-group">
                 <input type="submit" value="Login" class="btn btn-primary" />
             </div>
+            
+            <div>
+                <p>Nog geen account?</p>
+                <a asp-action="Register">Registeren</a>
+            </div>
+
         </form>
     </div>
 </div>

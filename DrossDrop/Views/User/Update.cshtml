@@ -2,50 +2,57 @@
 @model User;
 
 @{
-    ViewBag.Title = "Update User";
+    ViewBag.Title = "Gebruiker bewerken";
 }
-<h1>Update</h1>
 
-<h4>Order</h4>
+<h1>Bewerken</h1>
+
+<h4>Bewerk een gebruiker</h4>
+
 <hr />
+
 <div class="row">
+
     <div class="col-md-4">
+
         <form asp-action="Update">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
             <div class="form-group">
                 <label asp-for="roleId" class="control-label">Role Id</label>
-                <input asp-for="roleId" class="form-control" />
+                <input asp-for="roleId" class="form-control"/>
                 <span asp-validation-for="roleId" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="email" class="control-label"> Email</label>
-                <input asp-for="email" class="form-control" />
+                <input asp-for="email" class="form-control"/>
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="password" class="control-label">Password</label>
-                <input asp-for="password" class="form-control" />
+                <input asp-for="password" class="form-control"/>
                 <span asp-validation-for="password" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="firstName" class="control-label">First name</label>
-                <input asp-for="firstName" class="form-control" />
+                <input asp-for="firstName" class="form-control"/>
                 <span asp-validation-for="firstName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="lastName" class="control-label">Last name</label>
-                <input asp-for="lastName" class="form-control" />
+                <input asp-for="lastName" class="form-control"/>
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </div>
 
             <div class="form-group">
-                <input type="submit" value="Update" class="btn btn-primary" />
+                <input type="submit" value="Bewerken" class="btn btn-primary"/>
             </div>
         </form>
-    </div>
-</div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+        <div>
+            <a asp-action="Index">Terug</a>
+        </div>
+
+    </div>
+
 </div>

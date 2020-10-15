@@ -2,7 +2,7 @@
 using DrossDrop.Data;
 using DrossDrop.DTOs;
 
-namespace DrossDrop.Logic
+namespace DrossDrop.Data.Formatters
 {
     public class UserQuerystringFormatter
     {
@@ -15,8 +15,8 @@ namespace DrossDrop.Logic
 
         public string InsertFormatter(User user)
         {
-            string querystring = "INSERT INTO users (roleId, email, password, firstName, lastName) " +
-                                 "VALUES ("+ user.roleId +", '"+ user.email +"', '"+ user.password +"', '"+ user.firstName +"', '"+ user.lastName +"')";
+            string querystring = "INSERT INTO users (firstName, lastName, email, password) " +
+                                 "VALUES ('"+ user.firstName +"', '"+ user.lastName +"', '"+ user.email +"', '"+ user.password +"')";
 
             return querystring;
         }
@@ -36,7 +36,5 @@ namespace DrossDrop.Logic
 
             return querystring;
         }
-
-        
     }
 }

@@ -12,7 +12,7 @@ using Renci.SshNet;
 
 namespace DrossDrop.Data
 {
-    public class DBConnection : IData
+    public class DBConnection
     {
         private MySqlConnection connection;
         private string server;
@@ -94,6 +94,40 @@ namespace DrossDrop.Data
             }
 
             return users;
+        }
+
+        public IEnumerable<Product> ExecuteSelectProductQuery(string querystring)
+        {
+            List<Product> products = new List<Products>();
+
+            try
+            {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                connection.Open();
+                
+                MySqlCommand cmd = new MySqlCommand(querystring, connection);
+                DbDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Product product = new Product();
+
+                    product.productId = Convert.ToInt32(reader["productId"]);
+                    product.productName = reader["roleId"].ToString();
+                    product.productPrice = Convert.ToDecimal(reader["email"]);
+
+                    products.Add(product);
+                }
+
+                connection.Close();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("{0} Exception caught.", e);
+                connection.Close();
+            }
+
+            return products;
         }
 
         //Close connection

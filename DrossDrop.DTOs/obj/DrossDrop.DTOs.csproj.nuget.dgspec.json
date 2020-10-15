@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {}
+    "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {}
   },
   "projects": {
-    "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
+    "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
+        "projectUniqueName": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
         "projectName": "DrossDrop.DTOs",
-        "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
-        "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\obj\\",
+        "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj",
+        "packagesPath": "C:\\Users\\Raphaël\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\raphaelvanmarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Raphaël\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

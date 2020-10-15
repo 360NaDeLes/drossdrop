@@ -15,46 +15,35 @@ namespace DrossDrop.Logic
 {
     public class UserHandler
     {
-        private UserQuerystringFormatter formatter = new UserQuerystringFormatter();
-        IData db = DBFactory.GetInstance();
+        private readonly IUserData _userdata = UserFactory.GetInstance();
 
-        public void CreateAsync(User user)
+        public void CreateUser(User user)
         {
-            string querystring = formatter.InsertFormatter(user);
-
-            db.ExecuteNonResponsiveQuery(querystring);
+            _userdata.CreateUser(user);
         }
 
-        public IEnumerable<User> SelectAllAsync()
+        public IEnumerable<User> SelectAllUsers()
         {
-            List<User> list = db.ExecuteSelectUserQuery("SELECT * FROM users");
+            List<User> list = _userdata.SelectAllUsers().ToList();
 
             return list;
         }
 
-        public User SelectByIdAsync(int id)
+        public User SelectUserById(int id)
         {
-            User user = new User();
-
-            string querystring = formatter.SelectByIdFormatter(id);
-
-            db.ExecuteSelectUserQuery(querystring);
+            User user = _userdata.SelectUserById(id);
 
             return user;
         }
 
-        public void UpdateAsync(User user, int id)
+        public void UpdateUser(User user, int id)
         {
-            string querystring = formatter.UpdateFormatter(user, id);
-
-            db.ExecuteNonResponsiveQuery(querystring);
+            _userdata.UpdateUser(user, id);
         }
 
-        public void DeleteAsync(int id)
+        public void DeleteUser(int id)
         {
-            string querystring = formatter.DeleteFormatter(id);
-
-            db.ExecuteNonResponsiveQuery(querystring);
+            _userdata.DeleteUser(id);
         }
     }
 }

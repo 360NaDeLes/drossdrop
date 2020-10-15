@@ -33,3 +33,5 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\obj\Debug\netcor
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Data\obj\Debug\netcoreapp3.1\DrossDrop.Data.csproj.CoreCompileInputs.cache
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Data\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb

@@ -16,7 +16,7 @@ namespace DrossDrop.Controllers
         // Index: Gets all Users
         public IActionResult Index()
         {
-            return View(handler.SelectAllAsync());
+            return View(handler.SelectAllUsers());
         }
 
         // Create: Opens a form where you can create a customer
@@ -29,7 +29,7 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Create(User user)
         {
-            handler.CreateAsync(user);
+            handler.CreateUser(user);
 
             return RedirectToAction("Index");
         }
@@ -38,7 +38,7 @@ namespace DrossDrop.Controllers
         [HttpGet]
         public IActionResult Update(int id)
         {
-            User user = handler.SelectByIdAsync(id);
+            User user = handler.SelectUserById(id);
 
             return View(user);
         }
@@ -46,7 +46,7 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Update(User user, int id)
         {
-            handler.UpdateAsync(user, id);
+            handler.UpdateUser(user, id);
 
             return RedirectToAction("Index");
         }
@@ -54,7 +54,7 @@ namespace DrossDrop.Controllers
         // Delete: Deletes specified user's information from database
         public IActionResult Delete(int id)
         {
-            handler.DeleteAsync(id);
+            handler.DeleteUser(id);
 
             return RedirectToAction("Index");
         }

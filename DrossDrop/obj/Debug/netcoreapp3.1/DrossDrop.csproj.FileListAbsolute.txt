@@ -188,3 +188,17 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\System.CodeDom.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
