@@ -49,5 +49,15 @@ namespace DrossDrop.Data.DALs
 
             db.ExecuteNonResponsiveQuery(querystring);
         }
+
+        public User SelectUserByEmail(string email)
+        {
+            string querystring = formatter.SelectByEmailFormatter(email);
+
+            User user = db.ExecuteSelectUserQuery(querystring).FirstOrDefault();
+
+            return user;
+        }
+
     }
 }

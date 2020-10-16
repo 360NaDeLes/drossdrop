@@ -32,7 +32,7 @@ namespace DrossDrop.Data
             server = "localhost";
             database = "drossdrop";
             uid = "root";
-            password = "";
+            password = "root";
             string connectionString = "Server=" + server + ";" + "Database=" +
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
 
@@ -96,9 +96,10 @@ namespace DrossDrop.Data
             return users;
         }
 
+        // Select query (products only)
         public IEnumerable<Product> ExecuteSelectProductQuery(string querystring)
         {
-            List<Product> products = new List<Products>();
+            List<Product> products = new List<Product>();
 
             try
             {
@@ -111,10 +112,10 @@ namespace DrossDrop.Data
                 while (reader.Read())
                 {
                     Product product = new Product();
-
+                    
                     product.productId = Convert.ToInt32(reader["productId"]);
-                    product.productName = reader["roleId"].ToString();
-                    product.productPrice = Convert.ToDecimal(reader["email"]);
+                    product.productName = reader["productName"].ToString();
+                    product.productPrice = Convert.ToDecimal(reader["productPrice"]);
 
                     products.Add(product);
                 }

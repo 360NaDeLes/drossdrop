@@ -1,8 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<DrossDrop.DTOs.Product>
+
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Welkom</h1>
+
+<p>
+    <a asp-action="Create">Nieuw product aanmaken</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Product ID
+            </th>
+            <th>
+                Product naam
+            </th>
+            <th>
+                Product prijs
+            </th>
+            <th>
+                Acties
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.productId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productName)
+            </td>
+            <td>
+                €@Html.DisplayFor(modelItem => item.productPrice)
+            </td>
+            <td>
+                <a asp-action="Update" asp-route-id="@item.productId">Bewerken</a> |
+                <a asp-action="Delete" asp-route-id="@item.productId">Verwijderen</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

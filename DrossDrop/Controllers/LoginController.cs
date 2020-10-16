@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using DrossDrop.DTOs;
 using DrossDrop.Logic;
+using DrossDrop.Models;
 using Microsoft.AspNetCore.Mvc;
 using Renci.SshNet;
 
@@ -18,19 +19,18 @@ namespace DrossDrop.Controllers
             return View();
         }
 
-        //[HttpGet]
-        //public IActionResult Login()
-        //{
-        //    return RedirectToAction("Index");
-        //}
+        [HttpPost]
+        public IActionResult Login(LoginViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Index");
+            }
 
-        //[HttpPost]
-        //public async Task<IActionResult> Login(User user, string email, string password)
-        //{
-        //    await handler.ValidateUser(user, email, password);
+            handler.AttemptLogin(model.email, model.password);
 
-        //    return RedirectToAction("Index", "Home", new { area = "" });
-        //}
+            return RedirectToAction("Index", "Home");
+        }
 
         [HttpGet]
         public IActionResult Register()
@@ -39,11 +39,26 @@ namespace DrossDrop.Controllers
         }
 
         [HttpPost]
-        public IActionResult Register(User user)
+        public IActionResult Register(RegisterViewModel model)
         {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("Register");
+            }
+
+            User user = new User()
+            {
+                firstName = model.firstName,
+                lastName = model.lastName,
+                email = model.email,
+                password = model.password
+            };
+
             handler.CreateUser(user);
 
-            return RedirectToAction("Index");
+            handler.AttemptLogin(model.email, model.password);
+
+            return RedirectToAction("Index", "Home");
         }
     }
 }

@@ -5,7 +5,7 @@ using DrossDrop.Interface;
 
 namespace DrossDrop.Factory
 {
-    public static class Product
+    public static class ProductFactory
     {
         public static IProductData GetInstance()
         {

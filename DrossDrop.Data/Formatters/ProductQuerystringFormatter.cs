@@ -25,7 +25,6 @@ namespace DrossDrop.Data.Formatters
         {
             string querystring = "UPDATE products SET productName = '" + product.productName + "', productPrice = " +
                                  product.productPrice + "";
-                                                                                                                                                                                                    "', lastName = '" + product.lastName + "' WHERE productId = " + id + ""; 
 
             return querystring;
         }

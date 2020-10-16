@@ -150,7 +150,6 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.TagHelpers.output.cache
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\DrossDrop.RazorCoreGenerate.cache
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -202,3 +201,4 @@ C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\Dross
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs
+C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop\obj\Debug\netcoreapp3.1\Razor\Views\Login\Register.cshtml.g.cs

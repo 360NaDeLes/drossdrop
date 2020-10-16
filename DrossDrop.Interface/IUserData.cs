@@ -7,10 +7,11 @@ namespace DrossDrop.Interface
 {
     public interface IUserData
     {
-        public IEnumerable<User> SelectAllUsers();
-        public User SelectUserById(int id);
-        public void CreateUser(User user);
-        public void UpdateUser(User user, int id);
-        public void DeleteUser(int id);
+        IEnumerable<User> SelectAllUsers();
+        User SelectUserById(int id);
+        void CreateUser(User user);
+        void UpdateUser(User user, int id);
+        void DeleteUser(int id);
+        User SelectUserByEmail(string email);
     }
 }

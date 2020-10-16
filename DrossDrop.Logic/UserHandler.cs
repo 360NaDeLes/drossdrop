@@ -16,10 +16,17 @@ namespace DrossDrop.Logic
     public class UserHandler
     {
         private readonly IUserData _userdata = UserFactory.GetInstance();
+        private readonly EncryptionHelper helper = new EncryptionHelper();
 
         public void CreateUser(User user)
         {
+            user.salt = helper.CreateSalt(8);
+
+            user.password = helper.HashString(user.password, user.salt);
+
             _userdata.CreateUser(user);
+
+
         }
 
         public IEnumerable<User> SelectAllUsers()
@@ -44,6 +51,23 @@ namespace DrossDrop.Logic
         public void DeleteUser(int id)
         {
             _userdata.DeleteUser(id);
+        }
+
+        public bool AttemptLogin(string email, string password)
+        {
+            User user = _userdata.SelectUserByEmail(email);
+
+            if (user == null)
+            {
+                return false;
+            }
+
+            if (user.password != helper.HashString(user.password, user.salt))
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }

@@ -1,5 +1,4 @@
-﻿@using DrossDrop.DTOs
-@model User;
+﻿@model RegisterViewModel;
 
 @{
     ViewBag.Title = "Registreren";
@@ -19,26 +18,31 @@
 
             <div class="form-group">
                 <label asp-for="firstName" class="control-label">Voornaam</label>
-                <input asp-for="firstName" class="form-control"/>
+                <input asp-for="firstName" class="form-control" />
                 <span asp-validation-for="firstName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="lastName" class="control-label">Achternaam</label>
-                <input asp-for="lastName" class="form-control"/>
+                <input asp-for="lastName" class="form-control" />
                 <span asp-validation-for="lastName" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="email" class="control-label">Email</label>
-                <input asp-for="email" class="form-control"/>
+                <input asp-for="email" class="form-control" />
                 <span asp-validation-for="email" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="password" class="control-label">Wachtwoord</label>
-                <input asp-for="password" class="form-control"/>
+                <input asp-for="password" class="form-control" />
                 <span asp-validation-for="password" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Registreren" class="btn btn-primary"/>
+                <label asp-for="confirmpassword" class="control-label">Herhaal wachtwoord</label>
+                <input asp-for="confirmpassword" class="form-control" />
+                <span asp-validation-for="confirmpassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Registreren" class="btn btn-primary" />
             </div>
         </form>
         

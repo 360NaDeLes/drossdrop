@@ -5998,23 +5998,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Raphaël\\.nuget\\packages\\": {},
-    "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj",
+      "projectUniqueName": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj",
       "projectName": "DrossDrop.Logic",
-      "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj",
-      "packagesPath": "C:\\Users\\Raphaël\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Logic\\obj\\",
+      "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Logic\\DrossDrop.Logic.csproj",
+      "packagesPath": "C:\\Users\\raphaelvanmarion\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Raphaël\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\raphaelvanmarion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6027,14 +6027,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
-              "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj"
+            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.DTOs\\DrossDrop.DTOs.csproj"
             },
-            "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Factory\\DrossDrop.Factory.csproj": {
-              "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Factory\\DrossDrop.Factory.csproj"
+            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Factory\\DrossDrop.Factory.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Factory\\DrossDrop.Factory.csproj"
             },
-            "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj": {
-              "projectPath": "C:\\Users\\Raphaël\\source\\repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj"
+            "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj": {
+              "projectPath": "C:\\Users\\raphaelvanmarion\\Source\\Repos\\drossdrop\\DrossDrop.Interface\\DrossDrop.DataInterface.csproj"
             }
           }
         }
@@ -6062,7 +6062,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

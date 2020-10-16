@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using DrossDrop.Data;
 using DrossDrop.DTOs;
 
@@ -15,8 +16,8 @@ namespace DrossDrop.Data.Formatters
 
         public string InsertFormatter(User user)
         {
-            string querystring = "INSERT INTO users (firstName, lastName, email, password) " +
-                                 "VALUES ('"+ user.firstName +"', '"+ user.lastName +"', '"+ user.email +"', '"+ user.password +"')";
+            string querystring = "INSERT INTO users (firstName, lastName, email, password, salt) " +
+                                 "VALUES ('"+ user.firstName + "', '"+ user.lastName + "', '" + user.email + "', '" + user.password + "', '" + user.salt + "')";
 
             return querystring;
         }
@@ -33,6 +34,13 @@ namespace DrossDrop.Data.Formatters
         public string DeleteFormatter(int id)
         {
             string querystring = "DELETE FROM users WHERE userId = " + id + ""; 
+
+            return querystring;
+        }
+
+        public string SelectByEmailFormatter(string email)
+        {
+            string querystring = "SELECT * FROM users WHERE email = " + email + ""; 
 
             return querystring;
         }
