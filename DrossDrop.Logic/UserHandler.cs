@@ -25,8 +25,6 @@ namespace DrossDrop.Logic
             user.password = helper.HashString(user.password, user.salt);
 
             _userdata.CreateUser(user);
-
-
         }
 
         public IEnumerable<User> SelectAllUsers()
@@ -45,6 +43,10 @@ namespace DrossDrop.Logic
 
         public void UpdateUser(User user, int id)
         {
+            user.salt = helper.CreateSalt(8);
+
+            user.password = helper.HashString(user.password, user.salt);
+
             _userdata.UpdateUser(user, id);
         }
 

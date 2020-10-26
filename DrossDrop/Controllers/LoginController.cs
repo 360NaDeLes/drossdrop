@@ -13,6 +13,7 @@ namespace DrossDrop.Controllers
     public class LoginController : Controller
     {
         private UserHandler handler = new UserHandler();
+        private readonly EncryptionHelper helper = new EncryptionHelper();
 
         public IActionResult Index()
         {
