@@ -4,7 +4,6 @@ C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\bin\Debug\netcoreapp3.1\
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csprojAssemblyReference.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.AssemblyInfoInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.AssemblyInfo.cs
-C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.DTOs\bin\Debug\netcoreapp3.1\DrossDrop.DTOs.deps.json
@@ -16,3 +15,4 @@ C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcor
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csproj.CoreCompileInputs.cache
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.dll
 C:\Users\raphaelvanmarion\Source\Repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.DTOs\obj\Debug\netcoreapp3.1\DrossDrop.DTOs.csproj.CoreCompileInputs.cache

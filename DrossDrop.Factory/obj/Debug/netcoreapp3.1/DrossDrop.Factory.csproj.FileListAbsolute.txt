@@ -26,7 +26,7 @@ C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\bin\Debug\netcoreapp3
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csprojAssemblyReference.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.AssemblyInfoInputs.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.AssemblyInfo.cs
-C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csproj.CopyComplete
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.dll
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Factory\obj\Debug\netcoreapp3.1\DrossDrop.Factory.csproj.CoreCompileInputs.cache

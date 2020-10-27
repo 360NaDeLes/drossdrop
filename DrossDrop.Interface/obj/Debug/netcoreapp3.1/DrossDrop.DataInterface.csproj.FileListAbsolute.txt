@@ -18,7 +18,7 @@ C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\bin\Debug\netcoreap
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csprojAssemblyReference.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.AssemblyInfoInputs.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.AssemblyInfo.cs
-C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CopyComplete
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.dll
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Interface\obj\Debug\netcoreapp3.1\DrossDrop.DataInterface.csproj.CoreCompileInputs.cache

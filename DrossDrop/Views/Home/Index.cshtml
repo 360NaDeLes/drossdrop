@@ -13,20 +13,20 @@
 
 <table class="table">
     <thead>
-        <tr>
-            <th>
-                Product ID
-            </th>
-            <th>
-                Product naam
-            </th>
-            <th>
-                Product prijs
-            </th>
-            <th>
-                Acties
-            </th>
-        </tr>
+    <tr>
+        <th>
+            Product ID
+        </th>
+        <th>
+            Product naam
+        </th>
+        <th>
+            Product prijs
+        </th>
+        <th>
+            Acties
+        </th>
+    </tr>
     </thead>
     <tbody>
     @foreach (var item in Model) {
@@ -48,3 +48,13 @@
     }
     </tbody>
 </table>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-3">
+            <h3>@Html.DisplayFor(modelItem => item.productName)</h3>
+            <p>€@Html.DisplayFor(modelItem => item.productPrice)</p>
+        </div>
+    }
+</div>

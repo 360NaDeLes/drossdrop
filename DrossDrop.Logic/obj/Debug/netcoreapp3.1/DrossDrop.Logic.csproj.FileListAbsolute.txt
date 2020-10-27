@@ -8,7 +8,6 @@ C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csprojAssemblyReference.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.AssemblyInfoInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.AssemblyInfo.cs
-C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CoreCompileInputs.cache
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CopyComplete
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.dll
 C:\Users\Raphaël\Source\Repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.pdb
@@ -34,3 +33,4 @@ C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.dll
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.Factory.pdb
 C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\bin\Debug\netcoreapp3.1\DrossDrop.DataInterface.pdb
+C:\Users\Raphaël\source\repos\drossdrop\DrossDrop.Logic\obj\Debug\netcoreapp3.1\DrossDrop.Logic.csproj.CoreCompileInputs.cache

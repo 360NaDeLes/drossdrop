@@ -10,15 +10,19 @@ namespace DrossDrop.Models
     {
         [Required(ErrorMessage = "Dit veld is vereist")]
         public string firstName { get; set; }
+
         [Required(ErrorMessage = "Dit veld is vereist")]
         public string lastName { get; set; }
+        
         [Required(ErrorMessage = "Dit veld is vereist")]
         [DataType(DataType.EmailAddress)]
         public string email { get; set; }
+
         [Required(ErrorMessage = "Dit veld is vereist")]
         [StringLength(50, ErrorMessage = "The {0} must be at least {2} abd at max {1} characters long.", MinimumLength = 3)]
         [DataType(DataType.Password)]
         public string password { get; set; }
+
         [Required(ErrorMessage = "Dit veld is vereist")]
         [DataType(DataType.Password)]
         [Compare("password", ErrorMessage = "The password and confirmation password do not match.")]

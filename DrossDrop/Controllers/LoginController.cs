@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using DrossDrop.DTOs;
 using DrossDrop.Logic;
 using DrossDrop.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Renci.SshNet;
 
@@ -28,9 +29,14 @@ namespace DrossDrop.Controllers
                 return RedirectToAction("Index");
             }
 
-            handler.AttemptLogin(model.email, model.password);
-
-            return RedirectToAction("Index", "Home");
+            if (handler.AttemptLogin(model.email, model.password))
+            {
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Index", "User");
+            }
         }
 
         [HttpGet]

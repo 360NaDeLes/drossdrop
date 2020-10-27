@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\DrossDrop.Data\DrossDrop.Data.csproj" />
     <ProjectReference Include="..\DrossDrop.Interface\DrossDrop.DataInterface.csproj" />
   </ItemGroup>
