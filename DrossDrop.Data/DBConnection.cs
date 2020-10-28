@@ -32,7 +32,7 @@ namespace DrossDrop.Data
             server = "localhost";
             database = "drossdrop";
             uid = "root";
-            password = "";
+            password = "root";
             string connectionString = "Server=" + server + ";" + "Database=" +
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
 

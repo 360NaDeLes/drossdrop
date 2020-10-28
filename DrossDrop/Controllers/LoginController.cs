@@ -33,10 +33,8 @@ namespace DrossDrop.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-            else
-            {
-                return RedirectToAction("Index", "User");
-            }
+            
+            return RedirectToAction("Index", "User");
         }
 
         [HttpGet]
