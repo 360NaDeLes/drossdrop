@@ -32,7 +32,7 @@ namespace DrossDrop.Logic
 
             byte[] salt = Encoding.UTF8.GetBytes(saltString);
 
-            for (int i = 0; i < str.Length; i++)
+            for (int i = 0; i < salt.Length; i++)
             {
                 saltedBytes.Append(salt[i]);
             }

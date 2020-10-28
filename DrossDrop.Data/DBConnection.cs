@@ -81,6 +81,7 @@ namespace DrossDrop.Data
                     user.password = reader["password"].ToString();
                     user.firstName = reader["firstName"].ToString();
                     user.lastName = reader["lastName"].ToString();
+                    user.salt = reader["salt"].ToString();
 
                     users.Add(user);
                 }

@@ -64,7 +64,8 @@ namespace DrossDrop.Logic
                 return false;
             }
 
-            if (user.password != helper.HashString(user.password, user.salt))
+            string inputpw = helper.HashString(password, user.salt);
+            if (user.password != inputpw)
             {
                 return false;
             }

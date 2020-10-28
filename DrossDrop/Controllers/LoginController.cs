@@ -26,7 +26,7 @@ namespace DrossDrop.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return RedirectToAction("Index");
+                return View("Index");
             }
 
             if (handler.AttemptLogin(model.email, model.password))
@@ -34,7 +34,7 @@ namespace DrossDrop.Controllers
                 return RedirectToAction("Index", "Home");
             }
             
-            return RedirectToAction("Index", "User");
+            return View("Index");
         }
 
         [HttpGet]
@@ -48,7 +48,7 @@ namespace DrossDrop.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return RedirectToAction("Register");
+                return View("Index");
             }
 
             User user = new User()

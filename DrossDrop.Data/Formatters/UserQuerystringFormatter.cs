@@ -40,7 +40,7 @@ namespace DrossDrop.Data.Formatters
 
         public string SelectByEmailFormatter(string email)
         {
-            string querystring = "SELECT * FROM users WHERE email = " + email + ""; 
+            string querystring = "SELECT * FROM users WHERE email = '" + email + "'"; 
 
             return querystring;
         }
