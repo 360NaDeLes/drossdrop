@@ -29,7 +29,7 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Create(User user)
         {
-            handler.CreateUser(user);
+            handler.CreateUser(user, user.password);
 
             return RedirectToAction("Index");
         }

@@ -18,11 +18,11 @@ namespace DrossDrop.Logic
         private readonly IUserData _userdata = UserFactory.GetInstance();
         private readonly EncryptionHelper helper = new EncryptionHelper();
 
-        public void CreateUser(User user)
+        public void CreateUser(User user, string password)
         {
             user.salt = helper.CreateSalt(8);
 
-            user.password = helper.HashString(user.password, user.salt);
+            user.password = helper.HashString(password, user.salt);
 
             _userdata.CreateUser(user);
         }

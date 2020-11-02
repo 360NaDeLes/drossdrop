@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Xml;
 using DrossDrop.DTOs;
 using DrossDrop.Logic;
 using DrossDrop.Models;
@@ -55,11 +56,10 @@ namespace DrossDrop.Controllers
             {
                 firstName = model.firstName,
                 lastName = model.lastName,
-                email = model.email,
-                password = model.password
+                email = model.email
             };
 
-            handler.CreateUser(user);
+            handler.CreateUser(user, model.password);
 
             handler.AttemptLogin(model.email, model.password);
 
