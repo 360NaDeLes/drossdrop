@@ -23,9 +23,9 @@ namespace DrossDrop.Models
         [DataType(DataType.Password)]
         public string password { get; set; }
 
-        [Required(ErrorMessage = "Dit veld is vereist")]
-        [DataType(DataType.Password)]
-        [Compare("password", ErrorMessage = "The password and confirmation password do not match.")]
-        public string confirmpassword { get; set; }
+        //[required(errormessage = "dit veld is vereist")]
+        //[datatype(datatype.password)]
+        //[compare("password", errormessage = "the password and confirmation password do not match.")]
+        //public string confirmpassword { get; set; }
     }
 }

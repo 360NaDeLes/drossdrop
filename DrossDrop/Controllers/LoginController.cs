@@ -14,6 +14,12 @@ namespace DrossDrop.Controllers
 {
     public class LoginController : Controller
     {
+        // Session vars
+        public const string SessionEmail = "_Email";
+
+        public string SessionInfo_Name { get; private set; }
+
+        // Create new instance of Logic layer classes
         private UserHandler handler = new UserHandler();
         private readonly EncryptionHelper helper = new EncryptionHelper();
 
@@ -22,6 +28,7 @@ namespace DrossDrop.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Login(LoginViewModel model)
         {
@@ -30,8 +37,15 @@ namespace DrossDrop.Controllers
                 return View("Index");
             }
 
-            if (handler.AttemptLogin(model.email, model.password))
+            var user = handler.AttemptLogin(model.email, model.password);
+
+            if (user == null)
             {
+                if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionEmail)))
+                {
+                    HttpContext.Session.SetString(SessionEmail, model.email);
+                }
+
                 return RedirectToAction("Index", "Home");
             }
             
@@ -44,6 +58,7 @@ namespace DrossDrop.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Register(RegisterViewModel model)
         {

@@ -32,7 +32,7 @@ namespace DrossDrop.Data
             server = "localhost";
             database = "drossdrop";
             uid = "root";
-            password = "root";
+            password = "";
             string connectionString = "Server=" + server + ";" + "Database=" +
                                       database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
 
@@ -130,6 +130,40 @@ namespace DrossDrop.Data
             }
 
             return products;
+        }
+
+        // Select query (roles only)
+        public IEnumerable<Role> ExecuteSelectRoleQuery(string querystring)
+        {
+            List<Role> roles = new List<Role>();
+
+            try
+            {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                connection.Open();
+                
+                MySqlCommand cmd = new MySqlCommand(querystring, connection);
+                DbDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Role role = new Role();
+
+                    role.id = Convert.ToInt32(reader["roleId"]);
+                    role.name = reader["roleName"].ToString();
+
+                    roles.Add(role);
+                }
+
+                connection.Close();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("{0} Exception caught.", e);
+                connection.Close();
+            }
+
+            return roles;
         }
 
         //Close connection

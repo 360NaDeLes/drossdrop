@@ -55,22 +55,29 @@ namespace DrossDrop.Logic
             _userdata.DeleteUser(id);
         }
 
-        public bool AttemptLogin(string email, string password)
+        public User SelectUserByEmail(string email)
+        {
+            User user = _userdata.SelectUserByEmail(email);
+
+            return user;
+        }
+
+        public User AttemptLogin(string email, string password)
         {
             User user = _userdata.SelectUserByEmail(email);
 
             if (user == null)
             {
-                return false;
+                return null;
             }
 
             string inputpw = helper.HashString(password, user.salt);
             if (user.password != inputpw)
             {
-                return false;
+                return null;
             }
 
-            return true;
+            return user;
         }
     }
 }

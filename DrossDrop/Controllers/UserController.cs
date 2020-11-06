@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using DrossDrop.Attributes;
 using DrossDrop.DTOs;
 using DrossDrop.Logic;
 using Microsoft.AspNetCore.Mvc;
@@ -9,6 +10,7 @@ using Renci.SshNet;
 
 namespace DrossDrop.Controllers
 {
+    [RequiredRoles("admin")]
     public class UserController : Controller
     {
         private UserHandler handler = new UserHandler();
@@ -26,6 +28,7 @@ namespace DrossDrop.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Create(User user)
         {
@@ -43,6 +46,7 @@ namespace DrossDrop.Controllers
             return View(user);
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Update(User user, int id)
         {

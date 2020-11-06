@@ -32,6 +32,7 @@ namespace DrossDrop.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Create(Product product)
         {
@@ -49,6 +50,7 @@ namespace DrossDrop.Controllers
             return View(product);
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Update(Product product, int id)
         {
