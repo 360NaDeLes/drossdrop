@@ -8,60 +8,17 @@
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
-    string email = httpContextAccessor.HttpContext.Session.GetString("_Email");
+    string name = httpContextAccessor.HttpContext.Session.GetString("_Name");
 }
 
-@if (email != null)
+@if (name != null)
 {
-    <h3>@email</h3>
+    <h3>Welkom, @name!</h3>
 }
 else
 {
     <h3>Welkom!</h3>
 }
-
-<p>
-    <a asp-action="Create">Nieuw product aanmaken</a>
-</p>
-
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                Product ID
-            </th>
-            <th>
-                Product naam
-            </th>
-            <th>
-                Product prijs
-            </th>
-            <th>
-                Acties
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var item in Model)
-        {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.productId)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.productName)
-                </td>
-                <td>
-                    €@Html.DisplayFor(modelItem => item.productPrice)
-                </td>
-                <td>
-                    <a asp-action="Update" asp-route-id="@item.productId">Bewerken</a> |
-                    <a asp-action="Delete" asp-route-id="@item.productId">Verwijderen</a>
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
 
 <div class="row">
     @foreach (var item in Model)

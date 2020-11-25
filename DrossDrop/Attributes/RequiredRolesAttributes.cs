@@ -48,6 +48,7 @@ namespace DrossDrop.Attributes
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             string email = context.HttpContext.Session.GetString("_Email");
+
             if (string.IsNullOrEmpty(email))
             {
                 context.Result = new RedirectToActionResult("Index", "Home", new { });

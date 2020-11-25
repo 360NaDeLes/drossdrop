@@ -72,12 +72,25 @@ namespace DrossDrop.Logic
             }
 
             string inputpw = helper.HashString(password, user.salt);
+
             if (user.password != inputpw)
             {
                 return null;
             }
 
             return user;
+        }
+
+        public bool AdminCheck(string email)
+        {
+            User user = _userdata.SelectUserByEmail(email);
+
+            if (user.roleId == 2)
+            {
+                return true;
+            }
+
+            return false;
         }
     }
 }

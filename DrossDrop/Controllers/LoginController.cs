@@ -8,6 +8,7 @@ using DrossDrop.Logic;
 using DrossDrop.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Renci.SshNet;
 
 namespace DrossDrop.Controllers
@@ -16,12 +17,11 @@ namespace DrossDrop.Controllers
     {
         // Session vars
         public const string SessionEmail = "_Email";
-
-        public string SessionInfo_Name { get; private set; }
+        public const string SessionName = "_Name";
+        public const string LoggedIn = "_LoggedIn";
 
         // Create new instance of Logic layer classes
         private UserHandler handler = new UserHandler();
-        private readonly EncryptionHelper helper = new EncryptionHelper();
 
         public IActionResult Index()
         {
@@ -38,18 +38,30 @@ namespace DrossDrop.Controllers
             }
 
             var user = handler.AttemptLogin(model.email, model.password);
+            var isAdmin = handler.AdminCheck(model.email);
 
-            if (user == null)
+            if (user != null)
             {
-                if (string.IsNullOrEmpty(HttpContext.Session.GetString(SessionEmail)))
+                HttpContext.Session.SetString(SessionEmail, user.email);
+                HttpContext.Session.SetString(SessionName, user.firstName);
+                HttpContext.Session.SetString(LoggedIn, "true");
+
+                if (isAdmin)
                 {
-                    HttpContext.Session.SetString(SessionEmail, model.email);
+                    return RedirectToAction("Index", "AdminHome");
                 }
 
                 return RedirectToAction("Index", "Home");
             }
             
             return View("Index");
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpGet]
@@ -77,8 +89,22 @@ namespace DrossDrop.Controllers
             handler.CreateUser(user, model.password);
 
             handler.AttemptLogin(model.email, model.password);
+            var isAdmin = handler.AdminCheck(model.email);
 
-            return RedirectToAction("Index", "Home");
+            if (user != null)
+            {
+                HttpContext.Session.SetString(SessionEmail, user.email);
+
+
+                if (isAdmin)
+                {
+                    return RedirectToAction("Index", "AdminHome");
+                }
+
+                return RedirectToAction("Index", "Home");
+            }
+            
+            return View("Index");
         }
     }
 }

@@ -11,7 +11,7 @@ using Renci.SshNet;
 namespace DrossDrop.Controllers
 {
     [RequiredRoles("admin")]
-    public class UserController : Controller
+    public class AdminUserController : Controller
     {
         private UserHandler handler = new UserHandler();
 
