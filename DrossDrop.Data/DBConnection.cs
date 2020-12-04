@@ -26,17 +26,13 @@ namespace DrossDrop.Data
             Initialize();
         }
 
+        // TODO: Add connection string to config file/ database on school webserver
         //Initialize values
         private void Initialize()
         {
-            server = "localhost";
-            database = "drossdrop";
-            uid = "root";
-            password = "";
-            string connectionString = "Server=" + server + ";" + "Database=" +
-                                      database + ";" + "Uid=" + uid + ";" + "Pwd=" + password + ";";
+            AppConfiguration config = new AppConfiguration();
 
-            connection = new MySqlConnection(connectionString);
+            connection = new MySqlConnection(config.sqlConnectionString);
         }
 
         //Insert
