@@ -15,10 +15,6 @@ namespace DrossDrop.Data
     public class DBConnection
     {
         private MySqlConnection connection;
-        private string server;
-        private string database;
-        private string uid;
-        private string password;
 
         //Constructor
         public DBConnection()
@@ -26,7 +22,6 @@ namespace DrossDrop.Data
             Initialize();
         }
 
-        // TODO: Add connection string to config file/ database on school webserver
         //Initialize values
         private void Initialize()
         {
