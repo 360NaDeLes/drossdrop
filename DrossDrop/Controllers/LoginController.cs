@@ -88,23 +88,7 @@ namespace DrossDrop.Controllers
 
             handler.CreateUser(user, model.password);
 
-            handler.AttemptLogin(model.email, model.password);
-            var isAdmin = handler.AdminCheck(model.email);
-
-            if (user != null)
-            {
-                HttpContext.Session.SetString(SessionEmail, user.email);
-
-
-                if (isAdmin)
-                {
-                    return RedirectToAction("Index", "AdminHome");
-                }
-
-                return RedirectToAction("Index", "Home");
-            }
-            
-            return View("Index");
+            return RedirectToAction("Index", "Login");
         }
     }
 }

@@ -1,0 +1,44 @@
+﻿@using DrossDrop.DTOs
+@model Product;
+
+@{
+    ViewBag.Title = "Product aanmaken";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Aanmaken</h1>
+
+<h4>Maak een nieuw product aan</h4>
+
+<hr />
+
+<div class="row">
+
+    <div class="col-md-4">
+
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="productName" class="control-label">Naam</label>
+                <input asp-for="productName" class="form-control"/>
+                <span asp-validation-for="productName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="productPrice" class="control-label">Prijs</label>
+                <input asp-for="productPrice" class="form-control"/>
+                <span asp-validation-for="productPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Aanmaken" class="btn btn-primary"/>
+            </div>
+        </form>
+
+        <div>
+            <a asp-action="Index">Terug</a>
+        </div>
+
+    </div>
+
+</div>
+
+

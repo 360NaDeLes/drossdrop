@@ -8,11 +8,11 @@ namespace DrossDrop.Models
 {
     public class LoginViewModel
     {
-        [Required]
+        [Required(ErrorMessage = "Dit veld is vereist")]
         [DataType(DataType.EmailAddress)]
         public string email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Dit veld is vereist")]
         [DataType(DataType.Password)]
         public string password { get; set; }
     }
