@@ -45,5 +45,10 @@ namespace DrossDrop.Logic
         {
             _productdata.DeleteProduct(id);
         }
+
+        public void AddProductToCart(int userId, int productId)
+        {
+            _productdata.AddProductToCart(userId, productId);
+        }
     }
 }

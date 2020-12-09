@@ -108,6 +108,7 @@ namespace DrossDrop.Data
                     product.productId = Convert.ToInt32(reader["productId"]);
                     product.productName = reader["productName"].ToString();
                     product.productPrice = Convert.ToDecimal(reader["productPrice"]);
+                    product.productImage = reader["productImage"].ToString();
 
                     products.Add(product);
                 }

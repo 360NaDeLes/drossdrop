@@ -20,11 +20,11 @@ namespace DrossDrop.Data.Formatters
 
             return querystring;
         }
-
+        
         public string UpdateFormatter(Product product, int id)
         {
             string querystring = "UPDATE products SET productName = '" + product.productName + "', productPrice = " +
-                                 product.productPrice + "";
+                                 product.productPrice + " WHERE productId = " + id + "";
 
             return querystring;
         }
@@ -32,6 +32,14 @@ namespace DrossDrop.Data.Formatters
         public string DeleteFormatter(int id)
         {
             string querystring = "DELETE FROM products WHERE productId = " + id + ""; 
+
+            return querystring;
+        }
+        
+        public string AddToCartFormatter(int userId, int productId)
+        {
+            string querystring = "INSERT INTO carts (productId, userId) " +
+                                 "VALUES (" + productId + ", " + userId + ")";
 
             return querystring;
         }

@@ -22,7 +22,7 @@ namespace DrossDrop.Data.DALs
 
         public IEnumerable<Product> SelectAllProducts()
         {
-            List<Product> list = db.ExecuteSelectProductQuery("SELECT * FROM Products").ToList();
+            List<Product> list = db.ExecuteSelectProductQuery("SELECT Products.* FROM Products").ToList();
 
             return list;
         }
@@ -48,6 +48,11 @@ namespace DrossDrop.Data.DALs
             string querystring = formatter.DeleteFormatter(id);
 
             db.ExecuteNonResponsiveQuery(querystring);
+        }
+
+        public void AddProductToCart(int userId, int productId)
+        {
+            string querystring = formatter.AddToCartFormatter(userId, productId);
         }
     }
 }

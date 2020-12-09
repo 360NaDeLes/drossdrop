@@ -24,8 +24,14 @@ else
     @foreach (var item in Model)
     {
         <div class="col-md-3">
-            <h3>@Html.DisplayFor(modelItem => item.productName)</h3>
-            <p>€@Html.DisplayFor(modelItem => item.productPrice)</p>
+            <div class="card">
+                <img class="card-img-top" src="@item.productImage" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">@item.productName</h5>
+                    <p class="card-text">@item.productPrice</p>
+                    <a href="#" class="btn btn-primary">Toevoegen</a>
+                </div>
+            </div>
         </div>
     }
 </div>

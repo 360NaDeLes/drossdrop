@@ -12,5 +12,6 @@ namespace DrossDrop.Interface
         public void CreateProduct(Product product);
         public void UpdateProduct(Product product, int id);
         public void DeleteProduct(int id);
+        public void AddProductToCart(int userId, int productId);
     }
 }

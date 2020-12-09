@@ -18,11 +18,23 @@ namespace DrossDrop.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private ProductHandler handler = new ProductHandler();
+        private ProductHandler productHandler = new ProductHandler();
+        private UserHandler userHandler = new UserHandler();
 
         public IActionResult Index()
         {
-            return View(handler.SelectAllProducts());
+            return View(productHandler.SelectAllProducts());
+        }
+        
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public IActionResult AddToCart(int userId, int productId)
+        {
+            userHandler.SelectUserById(userId);
+            productHandler.SelectProductById(productId);
+            productHandler.AddProductToCart(user.userId, product.productId);
+
+            return RedirectToAction("Index");
         }
 
         public HomeController(ILogger<HomeController> logger)
