@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using DrossDrop.Attributes;
@@ -33,11 +34,18 @@ namespace DrossDrop.Controllers
             return View();
         }
 
+        // TODO: Fix product being saved as string
         [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Create(Product product)
         {
-            handler.CreateProduct(product);
+            //decimal productPrice = (decimal)product.productPrice;
+
+            string productPrice = product.productPrice.ToString();
+            
+            var productPrice1 = decimal.Parse(productPrice, CultureInfo.CurrentCulture);
+            
+            handler.CreateProduct(product, productPrice1);
 
             return RedirectToAction("Index");
         }

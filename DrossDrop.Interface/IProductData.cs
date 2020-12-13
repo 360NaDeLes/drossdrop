@@ -9,9 +9,8 @@ namespace DrossDrop.Interface
     {
         public IEnumerable<Product> SelectAllProducts();
         public Product SelectProductById(int id);
-        public void CreateProduct(Product product);
+        public void CreateProduct(Product product, decimal productPrice);
         public void UpdateProduct(Product product, int id);
         public void DeleteProduct(int id);
-        public void AddProductToCart(int userId, int productId);
     }
 }

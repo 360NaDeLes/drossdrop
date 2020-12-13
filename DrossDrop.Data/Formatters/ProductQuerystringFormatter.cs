@@ -13,10 +13,10 @@ namespace DrossDrop.Data.Formatters
             return querystring;
         }
 
-        public string InsertFormatter(Product product)
+        public string InsertFormatter(Product product, decimal productPrice)
         {
             string querystring = "INSERT INTO products (productName, productPrice) " +
-                                 "VALUES ('"+ product.productName +"', "+ product.productPrice +")";
+                                 "VALUES ('"+ product.productName +"', "+ productPrice +")";
 
             return querystring;
         }
@@ -36,12 +36,6 @@ namespace DrossDrop.Data.Formatters
             return querystring;
         }
         
-        public string AddToCartFormatter(int userId, int productId)
-        {
-            string querystring = "INSERT INTO carts (productId, userId) " +
-                                 "VALUES (" + productId + ", " + userId + ")";
-
-            return querystring;
-        }
+        
     }
 }

@@ -18,6 +18,7 @@ namespace DrossDrop.Controllers
         // Session vars
         public const string SessionEmail = "_Email";
         public const string SessionName = "_Name";
+        public const string SessionId = "_Id";
         public const string LoggedIn = "_LoggedIn";
 
         // Create new instance of Logic layer classes
@@ -44,6 +45,7 @@ namespace DrossDrop.Controllers
             {
                 HttpContext.Session.SetString(SessionEmail, user.email);
                 HttpContext.Session.SetString(SessionName, user.firstName);
+                HttpContext.Session.SetInt32(SessionId, user.userId);
                 HttpContext.Session.SetString(LoggedIn, "true");
 
                 if (isAdmin)

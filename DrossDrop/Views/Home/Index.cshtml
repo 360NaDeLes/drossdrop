@@ -1,5 +1,4 @@
 ﻿@using Microsoft.AspNetCore.Http
-@using DrossDrop.DTOs
 @model IEnumerable<DrossDrop.DTOs.Product>
 
 @inject IHttpContextAccessor httpContextAccessor
@@ -8,10 +7,12 @@
     ViewData["Title"] = "Home";
     Layout = "~/Views/Shared/_Layout.cshtml";
 
+    string loggedIn = httpContextAccessor.HttpContext.Session.GetString("_LoggedIn");
     string name = httpContextAccessor.HttpContext.Session.GetString("_Name");
+    int? id = httpContextAccessor.HttpContext.Session.GetInt32("_Id");
 }
 
-@if (name != null)
+@if (loggedIn != null)
 {
     <h3>Welkom, @name!</h3>
 }
@@ -29,7 +30,16 @@ else
                 <div class="card-body">
                     <h5 class="card-title">@item.productName</h5>
                     <p class="card-text">@item.productPrice</p>
-                    <a href="#" class="btn btn-primary">Toevoegen</a>
+                    
+                    @if (loggedIn != null)
+                    {
+                        <form asp-controller="Cart" asp-action="AddToCart" method="post" asp-route-userId="@id" asp-route-productId="@item.productId">
+                            <div class="form-group">
+                                <input type="submit" value="Toevoegen" class="btn btn-primary"/>
+                            </div>
+                        </form>
+                    }
+                    
                 </div>
             </div>
         </div>

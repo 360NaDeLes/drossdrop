@@ -17,9 +17,9 @@ namespace DrossDrop.Logic
     {
         private readonly IProductData _productdata = ProductFactory.GetInstance();
 
-        public void CreateProduct(Product product)
+        public void CreateProduct(Product product, decimal productPrice)
         {
-            _productdata.CreateProduct(product);
+            _productdata.CreateProduct(product, productPrice);
         }
 
         public IEnumerable<Product> SelectAllProducts()
@@ -46,9 +46,6 @@ namespace DrossDrop.Logic
             _productdata.DeleteProduct(id);
         }
 
-        public void AddProductToCart(int userId, int productId)
-        {
-            _productdata.AddProductToCart(userId, productId);
-        }
+        
     }
 }

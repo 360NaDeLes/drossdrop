@@ -13,9 +13,9 @@ namespace DrossDrop.Data.DALs
         private ProductQuerystringFormatter formatter = new ProductQuerystringFormatter();
         private DBConnection db = new DBConnection();
 
-        public void CreateProduct(Product product)
+        public void CreateProduct(Product product, decimal productPrice)
         {
-            string querystring = formatter.InsertFormatter(product);
+            string querystring = formatter.InsertFormatter(product, productPrice);
 
             db.ExecuteNonResponsiveQuery(querystring);
         }
@@ -50,9 +50,6 @@ namespace DrossDrop.Data.DALs
             db.ExecuteNonResponsiveQuery(querystring);
         }
 
-        public void AddProductToCart(int userId, int productId)
-        {
-            string querystring = formatter.AddToCartFormatter(userId, productId);
-        }
+        
     }
 }

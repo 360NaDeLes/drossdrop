@@ -157,6 +157,41 @@ namespace DrossDrop.Data
 
             return roles;
         }
+        
+        // Select query (carts only)
+        public IEnumerable<Cart> ExecuteSelectCartQuery(string querystring)
+        {
+            List<Cart> carts = new List<Cart>();
+
+            try
+            {
+                Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+                connection.Open();
+                
+                MySqlCommand cmd = new MySqlCommand(querystring, connection);
+                DbDataReader reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    Cart cart = new Cart();
+
+                    cart.cartId = Convert.ToInt32(reader["cartId"]);
+                    cart.userId = Convert.ToInt32(reader["userId"]);
+                    cart.productId = Convert.ToInt32(reader["productId"]);
+
+                    carts.Add(cart);
+                }
+
+                connection.Close();
+            }
+            catch (MySqlException e)
+            {
+                Console.WriteLine("{0} Exception caught.", e);
+                connection.Close();
+            }
+
+            return carts;
+        }
 
         //Close connection
         private void CloseConnection()

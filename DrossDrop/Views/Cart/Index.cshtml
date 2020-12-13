@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Http
+@model IEnumerable<DrossDrop.DTOs.Cart>
+
+@inject IHttpContextAccessor httpContextAccessor
+
+@{
+    ViewData["Title"] = "Winkelwagen";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    string name = httpContextAccessor.HttpContext.Session.GetString("_Name");
+    int? id = httpContextAccessor.HttpContext.Session.GetInt32("_Id");
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Product
+            </th>
+            <th>
+                Prijs
+            </th>
+            <th>
+                Acties
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.productName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productPrice)
+            </td>
+            <td>
+                <a asp-action="RemoveFromCart" asp-route-id="@item.cartId">Verwijderen</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
