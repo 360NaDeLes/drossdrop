@@ -15,16 +15,17 @@ namespace DrossDrop.Data.Formatters
 
         public string InsertFormatter(Product product, decimal productPrice)
         {
-            string querystring = "INSERT INTO products (productName, productPrice) " +
-                                 "VALUES ('"+ product.productName +"', "+ productPrice +")";
+            string querystring = "INSERT INTO products (productName, productPrice, productImage) " +
+                                 "VALUES ('"+ product.productName +"', "+ productPrice +", '"+ product.productImage +"')";
 
             return querystring;
         }
         
         public string UpdateFormatter(Product product, int id)
         {
-            string querystring = "UPDATE products SET productName = '" + product.productName + "', productPrice = " +
-                                 product.productPrice + " WHERE productId = " + id + "";
+            string querystring = "UPDATE products SET productName = '" + product.productName + 
+                                 "', productPrice = " + product.productPrice + "" +
+                                 ", productImage = '" + product.productImage + "' WHERE productId = " + id + "";
 
             return querystring;
         }

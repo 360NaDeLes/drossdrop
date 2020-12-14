@@ -13,11 +13,15 @@ namespace DrossDrop.Data.DALs
         private CartQuerystringFormatter formatter = new CartQuerystringFormatter();
         private DBConnection db = new DBConnection();
 
-        public IEnumerable<Cart> SelectAllItems(int userId)
+        public Cart SelectAllItems(int userId)
         {
-            List<Cart> list = db.ExecuteSelectCartQuery("SELECT Carts.* FROM Carts WHERE userId = " + userId + "").ToList();
+            Cart cart = db.ExecuteSelectCartQuery("SELECT p.*, c.cartId "+
+                                                                    "FROM users as u "+
+                                                                    "INNER JOIN carts as c ON u.cartId = c.cartId "+
+                                                                    "INNER JOIN products as p ON c.productId = p.productId "+
+                                                                    "WHERE u.userId = "+ userId +"");
 
-            return list;
+            return cart;
         }
         
         public void AddProductToCart(int userId, int productId)

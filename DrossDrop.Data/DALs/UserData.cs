@@ -7,7 +7,6 @@ using DrossDrop.Data.Formatters;
 using DrossDrop.Data.Repositories;
 using DrossDrop.DataInterface;
 using DrossDrop.DTOs;
-using DrossDrop.DataInterface;
 
 namespace DrossDrop.Data.DALs
 {

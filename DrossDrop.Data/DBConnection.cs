@@ -73,6 +73,7 @@ namespace DrossDrop.Data
                     user.firstName = reader["firstName"].ToString();
                     user.lastName = reader["lastName"].ToString();
                     user.salt = reader["salt"].ToString();
+                    user.cartId = Convert.ToInt32(reader["roleId"]);
 
                     users.Add(user);
                 }
@@ -159,10 +160,13 @@ namespace DrossDrop.Data
         }
         
         // Select query (carts only)
-        public IEnumerable<Cart> ExecuteSelectCartQuery(string querystring)
+        public Cart ExecuteSelectCartQuery(string querystring)
         {
-            List<Cart> carts = new List<Cart>();
+            Cart singlecart = new Cart();
 
+            singlecart.products = new List<Product>();
+            singlecart.user = new User();
+            
             try
             {
                 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
@@ -170,16 +174,25 @@ namespace DrossDrop.Data
                 
                 MySqlCommand cmd = new MySqlCommand(querystring, connection);
                 DbDataReader reader = cmd.ExecuteReader();
+                
 
                 while (reader.Read())
                 {
-                    Cart cart = new Cart();
 
-                    cart.cartId = Convert.ToInt32(reader["cartId"]);
-                    cart.userId = Convert.ToInt32(reader["userId"]);
-                    cart.productId = Convert.ToInt32(reader["productId"]);
-
-                    carts.Add(cart);
+                    if (reader["cartId"].ToString() == singlecart.user.cartId.ToString())
+                    {
+                        singlecart.user.cartId = Convert.ToInt32(reader["cartId"]);
+                    }
+                    
+                    Product product = new Product()
+                    {
+                        productId = Convert.ToInt32(reader["productId"]),
+                        productName = reader["productName"].ToString(),
+                        productPrice = Convert.ToDecimal(reader["productPrice"]),
+                        productImage = reader["productImage"].ToString()
+                    };
+                    
+                    singlecart.products.Add(product);
                 }
 
                 connection.Close();
@@ -190,7 +203,7 @@ namespace DrossDrop.Data
                 connection.Close();
             }
 
-            return carts;
+            return singlecart;
         }
 
         //Close connection

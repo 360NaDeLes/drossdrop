@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Http
-@model IEnumerable<DrossDrop.DTOs.Cart>
+@model DrossDrop.DTOs.Cart
 
 @inject IHttpContextAccessor httpContextAccessor
 
@@ -26,18 +26,18 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.productName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.productPrice)
-            </td>
-            <td>
-                <a asp-action="RemoveFromCart" asp-route-id="@item.cartId">Verwijderen</a>
-            </td>
-        </tr>
-        }
+           @foreach (var item in Model.products) {
+           <tr>
+               <td>
+                   @Html.DisplayFor(modelItem => item.productName)
+               </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.productPrice)
+               </td>
+               @* <td> *@
+               @*     <a asp-action="RemoveFromCart" asp-route-id="@item.cartId">Verwijderen</a> *@
+               @* </td> *@
+           </tr>
+           }
     </tbody>
 </table>

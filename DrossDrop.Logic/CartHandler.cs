@@ -17,11 +17,11 @@ namespace DrossDrop.Logic
     {
         private readonly ICartData _cartdata = CartFactory.GetInstance();
 
-        public IEnumerable<Cart> SelectAllItems(int userId)
+        public Cart SelectAllItems(int userId)
         {
-            List<Cart> list = (_cartdata).SelectAllItems(userId).ToList();
+            Cart cart = (_cartdata).SelectAllItems(userId);
 
-            return list;
+            return cart;
         }
         
         public void AddProductToCart(int userId, int productId)
