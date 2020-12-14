@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DrossDrop.Interface
+namespace DrossDrop.DataInterface
 {
     public interface IProductData
     {
