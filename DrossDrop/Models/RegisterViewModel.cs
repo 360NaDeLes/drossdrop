@@ -19,7 +19,7 @@ namespace DrossDrop.Models
         public string email { get; set; }
 
         [Required(ErrorMessage = "Dit veld is vereist")]
-        [StringLength(50, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 4)]
+        [StringLength(50, ErrorMessage = "Het wachtwoord moet minimaal {2} en maximaal {1} tekens bevatten.", MinimumLength = 4)]
         [DataType(DataType.Password)]
         public string password { get; set; }
     }

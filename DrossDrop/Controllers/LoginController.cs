@@ -39,7 +39,6 @@ namespace DrossDrop.Controllers
             }
 
             var user = handler.AttemptLogin(model.email, model.password);
-            var isAdmin = handler.AdminCheck(model.email);
 
             if (user != null)
             {
@@ -47,6 +46,8 @@ namespace DrossDrop.Controllers
                 HttpContext.Session.SetString(SessionName, user.firstName);
                 HttpContext.Session.SetInt32(SessionId, user.userId);
                 HttpContext.Session.SetString(LoggedIn, "true");
+                
+                var isAdmin = handler.AdminCheck(model.email);
 
                 if (isAdmin)
                 {
@@ -55,7 +56,9 @@ namespace DrossDrop.Controllers
 
                 return RedirectToAction("Index", "Home");
             }
-            
+
+            ModelState.AddModelError("email", "De ingevoerde gegevens kloppen niet.");
+
             return View("Index");
         }
 
@@ -78,9 +81,14 @@ namespace DrossDrop.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return View("Index");
+                if (String.IsNullOrWhiteSpace(model.firstName) || String.IsNullOrWhiteSpace(model.lastName) || String.IsNullOrWhiteSpace(model.email) || String.IsNullOrWhiteSpace(model.password))
+                {
+                    ModelState.AddModelError("firstName", "Zorg dat alle velden zijn ingevuld.");
+                
+                    return View(model);
+                }
             }
-
+            
             User user = new User()
             {
                 firstName = model.firstName,

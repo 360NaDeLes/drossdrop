@@ -15,9 +15,6 @@ Layout = "~/Views/Shared/_AdminLayout.cshtml";
     <thead>
         <tr>
             <th>
-                Gebruiker ID
-            </th>
-            <th>
                 Rol ID
             </th>
             <th>
@@ -30,9 +27,6 @@ Layout = "~/Views/Shared/_AdminLayout.cshtml";
                 Email
             </th>
             <th>
-                Wachtwoord
-            </th>
-            <th>
                 Acties
             </th>
         </tr>
@@ -40,9 +34,6 @@ Layout = "~/Views/Shared/_AdminLayout.cshtml";
     <tbody>
         @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.userId)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.roleId)
             </td>
@@ -54,9 +45,6 @@ Layout = "~/Views/Shared/_AdminLayout.cshtml";
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.password)
             </td>
             <td>
                 <a asp-action="Update" asp-route-id="@item.userId">Bewerken</a> |

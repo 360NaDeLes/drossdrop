@@ -32,6 +32,11 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Create(User user)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+            
             handler.CreateUser(user, user.password);
 
             return RedirectToAction("Index");
@@ -50,6 +55,11 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Update(User user, int id)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(user);
+            }
+            
             handler.UpdateUser(user, id);
 
             return RedirectToAction("Index");

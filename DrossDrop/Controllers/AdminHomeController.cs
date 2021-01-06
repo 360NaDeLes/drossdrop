@@ -34,18 +34,20 @@ namespace DrossDrop.Controllers
             return View();
         }
 
-        // TODO: Fix product being saved as string
         [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult Create(Product product)
         {
-            //decimal productPrice = (decimal)product.productPrice;
-
+            if (!ModelState.IsValid)
+            {
+                return View(product);
+            }
+            
             string productPrice = product.productPrice.ToString();
             
-            var productPrice1 = decimal.Parse(productPrice, CultureInfo.CurrentCulture);
+            var parsedPrice = decimal.Parse(productPrice, CultureInfo.CurrentCulture);
             
-            handler.CreateProduct(product, productPrice1);
+            handler.CreateProduct(product, parsedPrice);
 
             return RedirectToAction("Index");
         }
@@ -63,6 +65,11 @@ namespace DrossDrop.Controllers
         [HttpPost]
         public IActionResult Update(Product product, int id)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(product);
+            }
+            
             handler.UpdateProduct(product, id);
 
             return RedirectToAction("Index");
