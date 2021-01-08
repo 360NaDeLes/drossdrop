@@ -73,7 +73,6 @@ namespace DrossDrop.Data
                     user.firstName = reader["firstName"].ToString();
                     user.lastName = reader["lastName"].ToString();
                     user.salt = reader["salt"].ToString();
-                    user.cartId = Convert.ToInt32(reader["roleId"]);
 
                     users.Add(user);
                 }

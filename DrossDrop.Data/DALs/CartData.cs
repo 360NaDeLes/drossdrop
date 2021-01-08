@@ -16,11 +16,14 @@ namespace DrossDrop.Data.DALs
         public Cart SelectAllItems(int userId)
         {
             Cart cart = db.ExecuteSelectCartQuery("SELECT p.*, c.cartId "+
-                                                                    "FROM users as u "+
-                                                                    "INNER JOIN carts as c ON u.cartId = c.cartId "+
+                                                                    "FROM carts as c "+
                                                                     "INNER JOIN products as p ON c.productId = p.productId "+
-                                                                    "WHERE u.userId = "+ userId +"");
-
+                                                                    "WHERE c.userId = "+ userId +"");
+            cart.user = new User()
+            {
+                userId = userId
+            };
+            
             return cart;
         }
         
@@ -31,9 +34,9 @@ namespace DrossDrop.Data.DALs
             db.ExecuteNonResponsiveQuery(querystring);
         }
 
-        public void RemoveFromCart(int id)
+        public void RemoveFromCart(int userId, int productId)
         {
-            string querystring = formatter.RemoveFromCartFormatter(id);
+            string querystring = formatter.RemoveFromCartFormatter(userId, productId);
 
             db.ExecuteNonResponsiveQuery(querystring);
         }

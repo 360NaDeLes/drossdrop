@@ -33,11 +33,11 @@ namespace DrossDrop.Controllers
             return RedirectToAction("Index", "Cart", new { userId });
         }
 
-        public IActionResult RemoveFromCart(int id)
+        public IActionResult RemoveFromCart(int userId, int productId)
         {
-            cartHandler.RemoveFromCart(id);
+            cartHandler.RemoveFromCart(userId, productId);
             
-            return View("Index");
+            return RedirectToAction("Index", "Cart", new { userId });
         }
     }
 }

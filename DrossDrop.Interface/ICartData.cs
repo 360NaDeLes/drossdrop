@@ -9,6 +9,6 @@ namespace DrossDrop.DataInterface
     {
         public Cart SelectAllItems(int userId);
         public void AddProductToCart(int userId, int productId);
-        public void RemoveFromCart(int userId);
+        public void RemoveFromCart(int userId, int productId);
     }
 }

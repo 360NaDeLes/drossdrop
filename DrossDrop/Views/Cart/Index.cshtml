@@ -34,9 +34,9 @@
                <td>
                    @Html.DisplayFor(modelItem => item.productPrice)
                </td>
-               @* <td> *@
-               @*     <a asp-action="RemoveFromCart" asp-route-id="@item.cartId">Verwijderen</a> *@
-               @* </td> *@
+               <td>
+                    <a asp-action="RemoveFromCart" asp-route-userId="@Model.user.userId" asp-route-productId="@item.productId">Verwijderen</a>
+               </td>
            </tr>
            }
     </tbody>

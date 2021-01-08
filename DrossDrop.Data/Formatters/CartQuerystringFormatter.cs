@@ -14,9 +14,9 @@ namespace DrossDrop.Data.Formatters
             return querystring;
         }
         
-        public string RemoveFromCartFormatter(int id)
+        public string RemoveFromCartFormatter(int userId, int productId)
         {
-            string querystring = "DELETE FROM carts WHERE cartId = " + id + ""; 
+            string querystring = "DELETE FROM carts WHERE userId = " + userId + " AND productId = " + productId + " LIMIT 1"; 
 
             return querystring;
         }

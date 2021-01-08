@@ -16,7 +16,7 @@ namespace DrossDrop.Logic
     public class CartHandler
     {
         private readonly ICartData _cartdata = CartFactory.GetInstance();
-
+        
         public Cart SelectAllItems(int userId)
         {
             Cart cart = (_cartdata).SelectAllItems(userId);
@@ -29,9 +29,9 @@ namespace DrossDrop.Logic
             _cartdata.AddProductToCart(userId, productId);
         }
 
-        public void RemoveFromCart(int id)
+        public void RemoveFromCart(int userId, int productId)
         {
-            _cartdata.RemoveFromCart(id);
+            _cartdata.RemoveFromCart(userId, productId);
         }
     }
 }

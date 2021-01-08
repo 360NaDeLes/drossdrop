@@ -23,9 +23,13 @@ namespace DrossDrop.Logic
             user.salt = helper.CreateSalt(8);
 
             user.password = helper.HashString(password, user.salt);
+            
+            
 
             _userdata.CreateUser(user);
         }
+        
+        
 
         public IEnumerable<User> SelectAllUsers()
         {
